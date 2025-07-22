@@ -33,7 +33,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 bg-culture-gray relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="pt-40 pb-20 bg-culture-gray relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Philosophy */}
