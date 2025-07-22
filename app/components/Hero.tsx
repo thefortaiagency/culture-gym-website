@@ -42,18 +42,33 @@ export default function Hero() {
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           <span className="block">THE</span>
-          <span className="block text-culture-red text-crisp" style={{
-            textShadow: `
-              2px 2px 0 rgba(0, 0, 0, 1),
-              -1px -1px 0 rgba(0, 0, 0, 0.5),
-              1px -1px 0 rgba(0, 0, 0, 0.5),
-              -1px 1px 0 rgba(0, 0, 0, 0.5),
-              0 0 15px rgba(220, 38, 38, 0.4)
-            `,
+          <span className="block text-culture-red text-crisp culture-pulse" style={{
             fontWeight: '900',
             fontSize: '1.15em',
             letterSpacing: '0.08em'
-          }}>CULTURE</span>
+          }}>
+            <span style={{
+              textShadow: `
+                2px 2px 0 rgba(0, 0, 0, 1),
+                -1px -1px 0 rgba(0, 0, 0, 0.5),
+                1px -1px 0 rgba(0, 0, 0, 0.5),
+                -1px 1px 0 rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(220, 38, 38, 0.5)
+              `,
+              fontSize: '1.1em'
+            }}>CULT</span>
+            <span style={{
+              textShadow: `
+                2px 2px 0 rgba(0, 0, 0, 1),
+                -1px -1px 0 rgba(0, 0, 0, 0.5),
+                1px -1px 0 rgba(0, 0, 0, 0.5),
+                -1px 1px 0 rgba(0, 0, 0, 0.5),
+                0 0 10px rgba(220, 38, 38, 0.3)
+              `,
+              fontSize: '0.7em',
+              opacity: 0.9
+            }}>URE</span>
+          </span>
           <span className="block">GYM</span>
         </h1>
         

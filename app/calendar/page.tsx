@@ -121,16 +121,16 @@ export default function Calendar() {
           </div>
 
           {/* Navigation */}
-          <div className="flex items-center justify-between mb-8 slide-in">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8 slide-in">
             <button
               onClick={() => navigateDate('prev')}
-              className="glass-dark hover:glass-red px-6 py-3 rounded-xl hover-lift transition-all duration-300 font-bebas text-lg"
+              className="glass-dark hover:glass-red px-4 md:px-6 py-3 rounded-xl hover-lift transition-all duration-300 font-bebas text-lg w-full md:w-auto"
             >
               ← Previous
             </button>
 
-            <div className="glass-dark px-6 py-3 rounded-xl">
-              <h2 className="font-bebas text-3xl text-center text-culture-red">
+            <div className="glass-dark px-4 md:px-6 py-3 rounded-xl w-full md:w-auto">
+              <h2 className="font-bebas text-xl md:text-3xl text-center text-culture-red">
                 {currentView === 'month' && `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`}
                 {currentView === 'week' && `Week of ${getWeekDates()[0].toLocaleDateString()}`}
                 {currentView === 'day' && currentDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
@@ -139,7 +139,7 @@ export default function Calendar() {
 
             <button
               onClick={() => navigateDate('next')}
-              className="glass-dark hover:glass-red px-6 py-3 rounded-xl hover-lift transition-all duration-300 font-bebas text-lg"
+              className="glass-dark hover:glass-red px-4 md:px-6 py-3 rounded-xl hover-lift transition-all duration-300 font-bebas text-lg w-full md:w-auto"
             >
               Next →
             </button>
@@ -187,9 +187,9 @@ export default function Calendar() {
 
             {/* Week View */}
             {currentView === 'week' && (
-              <div className="grid grid-cols-7 gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-7 gap-3 overflow-x-auto md:overflow-visible">
                 {getWeekDates().map((date, index) => (
-                  <div key={index} className="glass rounded-xl p-3 min-h-[200px] hover-lift slide-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div key={index} className="glass rounded-xl p-3 min-h-[150px] md:min-h-[200px] hover-lift slide-in" style={{ animationDelay: `${index * 0.1}s` }}>
                     <div className="font-bebas text-lg text-culture-red mb-2">
                       {daysOfWeek[date.getDay()].slice(0, 3)}
                     </div>
@@ -215,16 +215,16 @@ export default function Calendar() {
             {currentView === 'month' && (
               <div>
                 {/* Month header */}
-                <div className="grid grid-cols-7 gap-3 mb-6">
+                <div className="grid grid-cols-7 gap-1 md:gap-3 mb-6">
                   {daysOfWeek.map((day, index) => (
-                    <div key={day} className="glass-red rounded-xl text-center font-bebas py-3 slide-in" style={{ animationDelay: `${index * 0.05}s` }}>
-                      {day.slice(0, 3)}
+                    <div key={day} className="glass-red rounded-xl text-center font-bebas py-1 md:py-3 text-xs md:text-base slide-in" style={{ animationDelay: `${index * 0.05}s` }}>
+                      {day.slice(0, 1)}
                     </div>
                   ))}
                 </div>
                 
                 {/* Month grid */}
-                <div className="grid grid-cols-7 gap-3">
+                <div className="grid grid-cols-7 gap-1 md:gap-3">
                   {getMonthDates().map((date, index) => {
                     const isCurrentMonth = date.getMonth() === currentDate.getMonth()
                     const dayClasses = getClassesForDay(daysOfWeek[date.getDay()])
@@ -232,12 +232,12 @@ export default function Calendar() {
                     return (
                       <div
                         key={index}
-                        className={`glass rounded-xl p-3 min-h-[100px] hover-lift slide-in ${
+                        className={`glass rounded-lg md:rounded-xl p-1 md:p-3 min-h-[60px] md:min-h-[100px] hover-lift slide-in ${
                           !isCurrentMonth ? 'opacity-50' : ''
                         }`}
                         style={{ animationDelay: `${index * 0.02}s` }}
                       >
-                        <div className="font-bebas text-culture-red text-lg mb-2">{date.getDate()}</div>
+                        <div className="font-bebas text-culture-red text-sm md:text-lg mb-1 md:mb-2">{date.getDate()}</div>
                         <div className="space-y-1">
                           {dayClasses.slice(0, 2).map((cls, clsIndex) => (
                             <div

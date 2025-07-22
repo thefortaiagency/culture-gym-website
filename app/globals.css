@@ -171,6 +171,17 @@
     }
   }
 
+  @keyframes culture-pulse {
+    0%, 100% { 
+      transform: scale(1);
+      filter: brightness(1);
+    }
+    50% { 
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+  }
+
   .floating {
     animation: float 6s ease-in-out infinite;
   }
@@ -190,5 +201,10 @@
   .hover-lift:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(220, 38, 38, 0.3);
+  }
+
+  .culture-pulse {
+    animation: culture-pulse 2s ease-in-out infinite;
+    display: inline-block;
   }
 }
