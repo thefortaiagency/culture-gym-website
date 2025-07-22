@@ -45,9 +45,12 @@ export default function About() {
               <span className="text-culture-red">CLEAN IT.</span>{' '}
               <span className="text-stroke">BE NICE.</span>
             </h2>
-            <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto">
-              We're a gym that embraces all fitness styles and levels. 
-              From young athletes to seniors, everyone finds their home here.
+            <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-4">
+              Northeast Indiana's most welcoming gym that embraces all fitness styles and levels. 
+              From young athletes to seniors, everyone finds their home here in Fort Wayne.
+            </p>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              Serving Fort Wayne, New Haven, Huntertown, Leo-Cedarville, and all of Allen County
             </p>
           </div>
 

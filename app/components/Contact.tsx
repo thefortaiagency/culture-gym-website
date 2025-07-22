@@ -19,9 +19,16 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="glass-dark rounded-2xl p-8 space-y-8 slide-in hover-lift">
               <div>
-                <h3 className="font-bebas text-3xl text-culture-red mb-4">LOCATION</h3>
-                <p className="text-xl mb-2">5316 Merchandise Dr</p>
-                <p className="text-xl">Fort Wayne, IN 46808</p>
+                <h3 className="font-bebas text-3xl text-culture-red mb-4">PRIME FORT WAYNE LOCATION</h3>
+                <p className="text-xl mb-2">📍 5310 Merchandise Dr</p>
+                <p className="text-xl mb-4">Fort Wayne, IN 46808</p>
+                <div className="glass rounded-xl p-4 text-sm space-y-2">
+                  <p className="text-gray-300">✅ Historic Spiece Fieldhouse - A Fort Wayne Landmark</p>
+                  <p className="text-gray-300">✅ Easy Access from I-69 & US-30</p>
+                  <p className="text-gray-300">✅ Serving All Northeast Indiana</p>
+                  <p className="text-gray-300">✅ Minutes from Downtown Fort Wayne</p>
+                  <p className="text-gray-300">✅ Ample Free Parking</p>
+                </div>
               </div>
 
               <div>

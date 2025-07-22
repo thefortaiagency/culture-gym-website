@@ -76,6 +76,11 @@ export default function Calendar() {
     setCurrentDate(newDate)
   }
 
+  const handleDayClick = (date: Date) => {
+    setCurrentDate(new Date(date))
+    setCurrentView('day')
+  }
+
   return (
     <div className="min-h-screen bg-culture-black text-culture-white relative">
       {/* Background */}
@@ -214,6 +219,11 @@ export default function Calendar() {
             {/* Month View */}
             {currentView === 'month' && (
               <div>
+                {/* Mobile hint */}
+                <div className="md:hidden text-center text-sm text-gray-400 mb-4">
+                  Tap any day to see class details
+                </div>
+                
                 {/* Month header */}
                 <div className="grid grid-cols-7 gap-1 md:gap-3 mb-6">
                   {daysOfWeek.map((day, index) => (
@@ -232,31 +242,49 @@ export default function Calendar() {
                     return (
                       <div
                         key={index}
-                        className={`glass rounded-lg md:rounded-xl p-1 md:p-3 min-h-[60px] md:min-h-[100px] hover-lift slide-in ${
+                        onClick={() => handleDayClick(date)}
+                        className={`glass rounded-lg md:rounded-xl p-1 md:p-3 min-h-[60px] md:min-h-[100px] hover-lift slide-in cursor-pointer transition-all duration-300 ${
                           !isCurrentMonth ? 'opacity-50' : ''
-                        }`}
+                        } hover:glass-red hover:scale-105`}
                         style={{ animationDelay: `${index * 0.02}s` }}
                       >
                         <div className="font-bebas text-culture-red text-sm md:text-lg mb-1 md:mb-2">{date.getDate()}</div>
                         <div className="space-y-1">
-                          {dayClasses.slice(0, 2).map((cls, clsIndex) => (
-                            <div
-                              key={cls.id}
-                              className="glass-dark rounded-lg text-xs p-2 border border-culture-red/30 hover-lift slide-in transition-all duration-300"
-                              style={{ animationDelay: `${(index * 0.02) + (clsIndex * 0.01)}s` }}
-                            >
-                              <div className="flex items-center gap-1 mb-1">
-                                <span className={`w-1.5 h-1.5 rounded-full ${cls.color}`}></span>
-                                <span className="font-bebas text-culture-red">{cls.time}</span>
+                          {/* Mobile view - just show dots */}
+                          <div className="md:hidden">
+                            {dayClasses.length > 0 && (
+                              <div className="flex flex-wrap gap-1 justify-center">
+                                {dayClasses.slice(0, 3).map((cls) => (
+                                  <span key={cls.id} className={`w-2 h-2 rounded-full ${cls.color}`}></span>
+                                ))}
+                                {dayClasses.length > 3 && (
+                                  <span className="text-[10px] text-gray-400">+{dayClasses.length - 3}</span>
+                                )}
                               </div>
-                              <div className="text-white font-medium truncate">{cls.class.split(' ')[0]}</div>
-                            </div>
-                          ))}
-                          {dayClasses.length > 2 && (
-                            <div className="text-xs text-gray-400 font-medium">
-                              +{dayClasses.length - 2} more
-                            </div>
-                          )}
+                            )}
+                          </div>
+                          
+                          {/* Desktop view - show class details */}
+                          <div className="hidden md:block">
+                            {dayClasses.slice(0, 2).map((cls, clsIndex) => (
+                              <div
+                                key={cls.id}
+                                className="glass-dark rounded-lg text-xs p-2 border border-culture-red/30 hover-lift slide-in transition-all duration-300"
+                                style={{ animationDelay: `${(index * 0.02) + (clsIndex * 0.01)}s` }}
+                              >
+                                <div className="flex items-center gap-1 mb-1">
+                                  <span className={`w-1.5 h-1.5 rounded-full ${cls.color}`}></span>
+                                  <span className="font-bebas text-culture-red">{cls.time}</span>
+                                </div>
+                                <div className="text-white font-medium truncate">{cls.class.split(' ')[0]}</div>
+                              </div>
+                            ))}
+                            {dayClasses.length > 2 && (
+                              <div className="text-xs text-gray-400 font-medium">
+                                +{dayClasses.length - 2} more
+                              </div>
+                            )}
+                          </div>
                         </div>
                       </div>
                     )

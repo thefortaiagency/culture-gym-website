@@ -72,10 +72,16 @@ export default function Hero() {
           <span className="block">GYM</span>
         </h1>
         
-        <p className={`text-xl md:text-2xl font-light mb-8 transition-all duration-1000 delay-300 ${
+        <p className={`text-xl md:text-2xl font-light mb-4 transition-all duration-1000 delay-300 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           FT WAYNE'S OLD SCHOOL GYM
+        </p>
+        
+        <p className={`text-md md:text-lg font-light mb-8 text-gray-300 transition-all duration-1000 delay-350 ${
+          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
+          📍 Historic Spiece Fieldhouse • Northeast Indiana's Premier Fitness Destination
         </p>
 
         {/* Dynamic Stats Display */}
