@@ -53,7 +53,7 @@ export default function Membership() {
   ]
 
   return (
-    <section id="membership" className="pt-40 pb-20 bg-culture-black relative">
+    <section id="membership" className="pb-20 bg-culture-black relative" style={{ paddingTop: '200px' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="section-title mb-4">
