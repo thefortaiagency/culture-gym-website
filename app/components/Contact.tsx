@@ -49,14 +49,20 @@ export default function Contact() {
 
               <div className="flex gap-4">
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/spiecefitness" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 glass-red flex items-center justify-center rounded-xl hover-lift transition-all duration-300"
+                  aria-label="Visit The Culture Gym on Facebook"
                 >
                   <span className="text-xl font-bold">f</span>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/spiecefitness" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 glass-red flex items-center justify-center rounded-xl hover-lift transition-all duration-300"
+                  aria-label="Visit The Culture Gym on Instagram"
                 >
                   <span className="text-xl">📷</span>
                 </a>
