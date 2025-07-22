@@ -1,0 +1,103 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
+
+export default function Hero() {
+  const [isLoaded, setIsLoaded] = useState(false)
+  const [currentStat, setCurrentStat] = useState(0)
+  
+  const stats = [
+    { number: '500+', label: 'ACTIVE MEMBERS' },
+    { number: '15+', label: 'YEARS STRONG' },
+    { number: '30+', label: 'GROUP CLASSES' },
+    { number: '24/7', label: 'ACCESS' }
+  ]
+
+  useEffect(() => {
+    setIsLoaded(true)
+    const interval = setInterval(() => {
+      setCurrentStat(prev => (prev + 1) % stats.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero-gym.jpg"
+          alt="Culture Gym Interior"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-culture-black/80 via-culture-black/60 to-culture-black" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
+        <h1 className={`hero-text mb-4 transition-all duration-1000 ${
+          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
+          <span className="block">THE</span>
+          <span className="block text-culture-red text-crisp" style={{
+            textShadow: `
+              2px 2px 0 rgba(0, 0, 0, 1),
+              -1px -1px 0 rgba(0, 0, 0, 0.5),
+              1px -1px 0 rgba(0, 0, 0, 0.5),
+              -1px 1px 0 rgba(0, 0, 0, 0.5),
+              0 0 15px rgba(220, 38, 38, 0.4)
+            `,
+            fontWeight: '900',
+            fontSize: '1.15em',
+            letterSpacing: '0.08em'
+          }}>CULTURE</span>
+          <span className="block">GYM</span>
+        </h1>
+        
+        <p className={`text-xl md:text-2xl font-light mb-8 transition-all duration-1000 delay-300 ${
+          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
+          FT WAYNE'S OLD SCHOOL GYM
+        </p>
+
+        {/* Dynamic Stats Display */}
+        <div className={`glass-dark rounded-2xl p-6 mb-8 mx-auto max-w-md slide-in transition-all duration-1000 delay-400 ${
+          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
+          <div className="text-center">
+            <div className="text-4xl font-bebas text-culture-red mb-2">{stats[currentStat].number}</div>
+            <div className="text-sm text-gray-300">{stats[currentStat].label}</div>
+          </div>
+        </div>
+
+        <div className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-500 ${
+          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
+          <a href="#membership" className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl pulse-glow hover-lift inline-block">
+            START YOUR JOURNEY
+          </a>
+          <a href="#classes" className="glass-dark px-8 py-4 font-bebas text-2xl uppercase tracking-wider hover-lift transition-all duration-300 inline-block rounded-xl border border-culture-red/30">
+            VIEW SCHEDULE
+          </a>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-700 ${
+          isLoaded ? 'opacity-100' : 'opacity-0'
+        }`}>
+          <div className="animate-bounce">
+            <svg className="w-6 h-6 text-culture-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* Decorative Elements */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-culture-black to-transparent" />
+    </section>
+  )
+}
