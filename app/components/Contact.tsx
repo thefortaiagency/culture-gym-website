@@ -7,8 +7,11 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="pt-40 pb-20 bg-culture-gray">
-      <div className="container mx-auto px-4">
+    <>
+      <div style={{ height: '180px', background: 'linear-gradient(to bottom, rgba(31, 31, 31, 0.5), rgba(10, 10, 10, 1))', width: '100%' }}>
+      </div>
+      <section id="contact" className="pb-20 bg-culture-black">
+        <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="section-title text-center mb-12">
             <span className="text-stroke">READY TO</span>{' '}
@@ -93,15 +96,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="mt-20 py-8 border-t border-culture-black/50">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">
-            © 2024 The Culture Gym. All rights reserved. | Fix It. Clean It. Be Nice.
-          </p>
-        </div>
-      </footer>
     </section>
+    </>
   )
 }

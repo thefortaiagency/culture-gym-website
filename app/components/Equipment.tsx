@@ -54,7 +54,7 @@ export default function Equipment() {
   }
 
   return (
-    <section id="equipment" className="pb-20 bg-culture-black" style={{ paddingTop: '200px' }}>
+    <section id="equipment" className="bg-culture-black" style={{ paddingTop: '250px', paddingBottom: '80px' }}>
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-12">
           <span className="text-stroke">BUILT FOR</span>{' '}

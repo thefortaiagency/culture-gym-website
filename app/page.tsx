@@ -9,6 +9,7 @@ import Membership from './components/Membership'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import SmoothScroll from './components/SmoothScroll'
+import BottomNav from './components/BottomNav'
 
 export default function Home() {
   return (
@@ -17,11 +18,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <CultureCard />
-      <About />
-      <Equipment />
-      <Classes />
       <Membership />
+      <Classes />
+      <Equipment />
+      <About />
       <Contact />
+      <BottomNav />
     </main>
   )
 }

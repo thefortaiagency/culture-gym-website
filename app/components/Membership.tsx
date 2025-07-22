@@ -53,8 +53,11 @@ export default function Membership() {
   ]
 
   return (
-    <section id="membership" className="pb-20 bg-culture-black relative" style={{ paddingTop: '200px' }}>
-      <div className="container mx-auto px-4">
+    <>
+      <div style={{ height: '180px', background: 'linear-gradient(to bottom, rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 1))', width: '100%' }}>
+      </div>
+      <section id="membership" className="bg-culture-gray relative">
+        <div className="container mx-auto px-4 pb-20">
         <div className="text-center mb-12">
           <h2 className="section-title mb-4">
             <span className="text-stroke">JOIN THE</span>{' '}
@@ -126,5 +129,6 @@ export default function Membership() {
         </div>
       </div>
     </section>
+    </>
   )
 }

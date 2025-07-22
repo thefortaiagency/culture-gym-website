@@ -18,7 +18,18 @@
   
   /* Fix for fixed navbar overlap */
   section[id] {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 80px;
+  }
+  
+  /* Explicit fix for membership section */
+  .membership-spacer {
+    height: 200px !important;
+    min-height: 200px !important;
+    display: block !important;
+  }
+  
+  .membership-section {
+    padding-top: 0 !important;
   }
 
   body {

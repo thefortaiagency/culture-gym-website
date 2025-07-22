@@ -6,6 +6,7 @@ import Image from 'next/image'
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [currentStat, setCurrentStat] = useState(0)
+  const [showStats, setShowStats] = useState(false)
   
   const stats = [
     { number: '500+', label: 'ACTIVE MEMBERS' },
@@ -23,23 +24,9 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Dynamic Stats Display at Top */}
-      <div className="glass-dark py-3 mt-20 relative z-20">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center">
-            <div className="text-center transition-all duration-500">
-              <div className="text-3xl font-bebas text-culture-red mb-1">{stats[currentStat].number}</div>
-              <div className="text-sm text-gray-300 uppercase tracking-wider">{stats[currentStat].label}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Hero Content */}
-      <div className="flex-1 flex items-center justify-center relative">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0">
+    <section id="top" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
         <Image
           src="/images/hero-gym.jpg"
           alt="Culture Gym Interior"
@@ -49,6 +36,30 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-culture-black/80 via-culture-black/60 to-culture-black" />
       </div>
+
+      {/* Stats Button - Floating */}
+      <button 
+        onClick={() => setShowStats(!showStats)}
+        className="absolute top-24 left-1/2 transform -translate-x-1/2 z-30 glass-red px-6 py-2 rounded-full font-bebas text-lg uppercase tracking-wider hover-lift transition-all duration-300 flex items-center gap-3"
+      >
+        <span className="text-2xl font-bold">{stats[currentStat].number}</span>
+        <span className="text-sm">{stats[currentStat].label}</span>
+        <span className="text-xs opacity-75">▼</span>
+      </button>
+
+      {/* Stats Dropdown */}
+      {showStats && (
+        <div className="absolute top-36 left-1/2 transform -translate-x-1/2 z-30 glass-dark rounded-2xl p-6 transition-all duration-300 slide-in">
+          <div className="grid grid-cols-2 gap-4">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center p-3">
+                <div className="text-2xl font-bebas text-culture-red">{stat.number}</div>
+                <div className="text-xs text-gray-300 uppercase">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
@@ -98,7 +109,6 @@ export default function Hero() {
           📍 Historic Spiece Fieldhouse • Northeast Indiana's Premier Fitness Destination
         </p>
 
-
         <div className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-500 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
@@ -120,11 +130,10 @@ export default function Hero() {
             </svg>
           </div>
         </div>
-        </div>
-
-        {/* Decorative Elements */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-culture-black to-transparent" />
       </div>
+
+      {/* Decorative Elements */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-culture-black to-transparent" />
     </section>
   )
 }

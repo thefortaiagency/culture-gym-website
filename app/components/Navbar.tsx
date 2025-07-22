@@ -16,9 +16,10 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: '#equipment', label: 'EQUIPMENT' },
-    { href: '#classes', label: 'CLASSES' },
     { href: '#membership', label: 'MEMBERSHIP' },
+    { href: '#classes', label: 'CLASSES' },
+    { href: '#equipment', label: 'EQUIPMENT' },
+    { href: '#about', label: 'ABOUT' },
     { href: '#contact', label: 'CONTACT' },
   ]
 
@@ -29,13 +30,15 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <Image
-              src="/images/culturelogo2.png"
-              alt="The Culture Gym"
-              width={180}
-              height={60}
-              className="brightness-0 invert"
-            />
+            <a href="#top" className="cursor-pointer">
+              <Image
+                src="/images/culturelogo2.png"
+                alt="The Culture Gym"
+                width={180}
+                height={60}
+                className="brightness-0 invert"
+              />
+            </a>
           </div>
 
           {/* Desktop Menu */}
@@ -49,9 +52,6 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a href="#about" className="font-bebas text-xl tracking-wider hover:text-culture-red transition-colors duration-300">
-              ABOUT
-            </a>
             <a href="#membership" className="glass-red px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block">
               JOIN NOW
             </a>
