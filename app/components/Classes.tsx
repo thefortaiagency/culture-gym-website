@@ -33,7 +33,7 @@ export default function Classes() {
   ]
 
   return (
-    <section id="classes" className="py-20 bg-culture-gray relative overflow-visible">
+    <section id="classes" className="py-20 bg-culture-gray relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="section-title mb-4">
@@ -70,11 +70,13 @@ export default function Classes() {
               
               <div className="relative">
                 <div 
-                  className="space-y-3 pr-2" 
+                  className="space-y-3 pr-2 custom-scrollbar" 
                   style={{ 
                     height: '320px', 
-                    overflowY: 'scroll',
-                    border: '1px solid rgba(220, 38, 38, 0.3)'
+                    overflowY: 'auto',
+                    border: '1px solid rgba(220, 38, 38, 0.3)',
+                    borderRadius: '8px',
+                    padding: '12px'
                   }}
                   tabIndex={0}
                   role="region"
@@ -101,14 +103,14 @@ export default function Classes() {
             </div>
           </div>
 
-          <div className="text-center mt-8 relative z-20">
+          <div className="text-center mt-8">
             <button 
               onClick={(e) => {
                 e.stopPropagation();
                 console.log('Button clicked, navigating to calendar...');
                 window.location.href = '/calendar';
               }}
-              className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl hover-lift pulse-glow relative z-10 transition-all duration-300"
+              className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl hover-lift pulse-glow transition-all duration-300"
               style={{ pointerEvents: 'auto' }}
             >
               <span className="flex items-center gap-2 justify-center">
