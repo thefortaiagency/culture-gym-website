@@ -1,6 +1,7 @@
 'use client'
 
 import Hero from './components/Hero'
+import CultureCard from './components/CultureCard'
 import About from './components/About'
 import Equipment from './components/Equipment'
 import Classes from './components/Classes'
@@ -15,6 +16,7 @@ export default function Home() {
       <SmoothScroll />
       <Navbar />
       <Hero />
+      <CultureCard />
       <About />
       <Equipment />
       <Classes />
