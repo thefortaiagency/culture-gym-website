@@ -23,9 +23,23 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Dynamic Stats Display at Top */}
+      <div className="glass-dark py-3 mt-20 relative z-20">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center">
+            <div className="text-center transition-all duration-500">
+              <div className="text-3xl font-bebas text-culture-red mb-1">{stats[currentStat].number}</div>
+              <div className="text-sm text-gray-300 uppercase tracking-wider">{stats[currentStat].label}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Hero Content */}
+      <div className="flex-1 flex items-center justify-center relative">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
         <Image
           src="/images/hero-gym.jpg"
           alt="Culture Gym Interior"
@@ -84,15 +98,6 @@ export default function Hero() {
           📍 Historic Spiece Fieldhouse • Northeast Indiana's Premier Fitness Destination
         </p>
 
-        {/* Dynamic Stats Display */}
-        <div className={`glass-dark rounded-2xl p-6 mb-8 mx-auto max-w-md slide-in transition-all duration-1000 delay-400 ${
-          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          <div className="text-center">
-            <div className="text-4xl font-bebas text-culture-red mb-2">{stats[currentStat].number}</div>
-            <div className="text-sm text-gray-300">{stats[currentStat].label}</div>
-          </div>
-        </div>
 
         <div className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-500 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -115,10 +120,11 @@ export default function Hero() {
             </svg>
           </div>
         </div>
-      </div>
+        </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-culture-black to-transparent" />
+        {/* Decorative Elements */}
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-culture-black to-transparent" />
+      </div>
     </section>
   )
 }

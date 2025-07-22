@@ -16,7 +16,6 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: '#about', label: 'ABOUT' },
     { href: '#equipment', label: 'EQUIPMENT' },
     { href: '#classes', label: 'CLASSES' },
     { href: '#membership', label: 'MEMBERSHIP' },
@@ -50,6 +49,9 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a href="#about" className="font-bebas text-xl tracking-wider hover:text-culture-red transition-colors duration-300">
+              ABOUT
+            </a>
             <a href="#membership" className="glass-red px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block">
               JOIN NOW
             </a>
