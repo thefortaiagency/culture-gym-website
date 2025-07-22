@@ -58,7 +58,7 @@ export default function Contact() {
                   <span className="text-xl font-bold">f</span>
                 </a>
                 <a 
-                  href="https://www.facebook.com/spiecefitness" 
+                  href="https://www.instagram.com/the_culture_gym?igsh=dTF3aWhwOGJ2eGFh" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 glass-red flex items-center justify-center rounded-xl hover-lift transition-all duration-300"
