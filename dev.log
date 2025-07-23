@@ -406,3 +406,18 @@ Import trace for requested module:
  GET /_next/static/css/app/layout.css?v=1753236852610 404 in 13ms
  GET / 200 in 24ms
  GET /_next/static/css/app/layout.css?v=1753236852617 404 in 16ms
+ ✓ Compiled in 136ms (941 modules)
+ GET / 200 in 43ms
+ GET / 200 in 7ms
+ ✓ Compiled /_not-found in 59ms (931 modules)
+ GET /_next/static/css/app/layout.css?v=1753237189826 404 in 147ms
+ GET /_next/static/css/app/layout.css?v=1753237189815 404 in 147ms
+ GET / 200 in 98ms
+ GET / 200 in 6ms
+ GET /_next/static/css/app/layout.css?v=1753237189987 404 in 12ms
+ GET /_next/static/css/app/layout.css?v=1753237189991 404 in 10ms
+ ✓ Compiled in 90ms (945 modules)
+ GET / 200 in 52ms
+ GET /_next/static/css/app/layout.css?v=1753237217970 404 in 40ms
+ GET / 200 in 48ms
+ GET /_next/static/css/app/layout.css?v=1753237217990 404 in 10ms

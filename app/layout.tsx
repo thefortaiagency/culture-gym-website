@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     siteName: "The Culture Gym Fort Wayne",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The Culture Gym Fort Wayne",
+      },
+    ],
   },
   robots: {
     index: true,
