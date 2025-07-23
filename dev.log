@@ -1,0 +1,387 @@
+
+> culture-gym-website@1.0.0 dev
+> next dev
+
+ ⚠ Warning: Found multiple lockfiles. Selecting /Users/thefortob/package-lock.json.
+   Consider removing the lockfiles at:
+   * /Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/package-lock.json
+
+   ▲ Next.js 15.4.2
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.86.78:3000
+
+ ✓ Starting...
+ ✓ Ready in 934ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1322ms (583 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ✓ Compiled in 47ms (253 modules)
+ GET / 200 in 1583ms
+ ✓ Compiled in 80ms (253 modules)
+ GET / 200 in 17ms
+ ✓ Compiled in 120ms (583 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 50ms
+ ✓ Compiled in 108ms (585 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 40ms
+ ⨯ ./app/components/Membership.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Membership.tsx[0m:136:1]
+ [2m133[0m |       </div>
+ [2m134[0m |     </section>
+ [2m135[0m |   )
+ [2m136[0m | }
+     : [35;1m^[0m
+     `----
+  [31mx[0m Unexpected eof
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Membership.tsx[0m:136:1]
+ [2m133[0m |       </div>
+ [2m134[0m |     </section>
+ [2m135[0m |   )
+ [2m136[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/Membership.tsx
+./app/page.tsx
+ ✓ Compiled in 140ms (585 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 36ms
+ GET / 200 in 132ms
+ ✓ Compiled in 130ms (585 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 51ms
+ GET / 200 in 8ms
+ ⨯ ./app/components/Contact.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Contact.tsx[0m:110:1]
+ [2m107[0m |       </footer>
+ [2m108[0m |     </section>
+ [2m109[0m |   )
+ [2m110[0m | }
+     : [35;1m^[0m
+     `----
+  [31mx[0m Unexpected eof
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Contact.tsx[0m:110:1]
+ [2m107[0m |       </footer>
+ [2m108[0m |     </section>
+ [2m109[0m |   )
+ [2m110[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/Contact.tsx
+./app/page.tsx
+ ⨯ ./app/components/Contact.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Contact.tsx[0m:110:1]
+ [2m107[0m |       </footer>
+ [2m108[0m |     </section>
+ [2m109[0m |   )
+ [2m110[0m | }
+     : [35;1m^[0m
+     `----
+  [31mx[0m Unexpected eof
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Contact.tsx[0m:110:1]
+ [2m107[0m |       </footer>
+ [2m108[0m |     </section>
+ [2m109[0m |   )
+ [2m110[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/Contact.tsx
+./app/page.tsx
+ ○ Compiling /_error ...
+ GET / 500 in 1339ms
+ GET / 500 in 275ms
+ GET / 500 in 7ms
+ GET / 500 in 5ms
+ GET / 500 in 16ms
+ ✓ Compiled /_error in 143ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 224ms
+ GET / 200 in 75ms
+ ✓ Compiled /_not-found in 447ms (904 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ✓ Compiled in 63ms (406 modules)
+ GET / 200 in 17ms
+ GET / 200 in 8ms
+ ✓ Compiled in 167ms (918 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 38ms
+ GET / 200 in 7ms
+ ✓ Compiled in 105ms (920 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 39ms
+ GET / 200 in 11ms
+ ✓ Compiled in 97ms (920 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 41ms
+ GET / 200 in 9ms
+ ✓ Compiled in 89ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 49ms
+ GET / 200 in 9ms
+ GET / 200 in 142ms
+ ⨯ ./app/components/Equipment.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Equipment.tsx[0m:124:1]
+ [2m121[0m |       </div>
+ [2m122[0m |     </section>
+ [2m123[0m |   )
+ [2m124[0m | }
+     : [35;1m^[0m
+     `----
+  [31mx[0m Unexpected eof
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Equipment.tsx[0m:124:1]
+ [2m121[0m |       </div>
+ [2m122[0m |     </section>
+ [2m123[0m |   )
+ [2m124[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/Equipment.tsx
+./app/page.tsx
+ ✓ Compiled in 212ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 67ms
+ GET / 200 in 10ms
+ GET / 200 in 11ms
+ ✓ Compiled in 89ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 58ms
+ GET / 200 in 9ms
+ GET / 200 in 9ms
+ ✓ Compiled in 100ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 42ms
+ GET / 200 in 10ms
+ GET / 200 in 8ms
+ ✓ Compiled in 200ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 40ms
+ GET / 200 in 13ms
+ GET / 200 in 7ms
+ ✓ Compiled in 85ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 53ms
+ GET / 200 in 12ms
+ GET / 200 in 7ms
+ ✓ Compiled in 109ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 37ms
+ GET / 200 in 10ms
+ GET / 200 in 10ms
+ GET / 200 in 140ms
+ ✓ Compiled in 101ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 52ms
+ GET / 200 in 14ms
+ GET / 200 in 9ms
+ GET / 200 in 128ms
+ GET / 200 in 81ms
+ GET / 200 in 103ms
+ GET / 200 in 89ms
+ ✓ Compiled in 281ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 68ms
+ GET / 200 in 13ms
+ GET / 200 in 12ms
+ ✓ Compiled in 126ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 41ms
+ GET / 200 in 10ms
+ GET / 200 in 9ms
+ GET / 200 in 123ms
+ GET / 200 in 65ms
+ ⨯ ./app/components/Classes.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Classes.tsx[0m:139:1]
+ [2m136[0m |       </div>
+ [2m137[0m |     </section>
+ [2m138[0m |   )
+ [2m139[0m | }
+     : [35;1m^[0m
+     `----
+  [31mx[0m Unexpected eof
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Classes.tsx[0m:139:1]
+ [2m136[0m |       </div>
+ [2m137[0m |     </section>
+ [2m138[0m |   )
+ [2m139[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/Classes.tsx
+./app/page.tsx
+ ✓ Compiled in 105ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 92ms
+ GET / 200 in 9ms
+ GET / 200 in 8ms
+ GET / 200 in 122ms
+ ⨯ ./app/components/Equipment.tsx
+Error:   [31mx[0m Unterminated regexp literal
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Equipment.tsx[0m:120:1]
+ [2m117[0m |         </div>
+ [2m118[0m |       </div>
+ [2m119[0m |     </section>
+ [2m120[0m |     </>
+     : [35;1m     ^^[0m
+ [2m121[0m |   )
+ [2m122[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/Equipment.tsx
+./app/page.tsx
+ ✓ Compiled in 104ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 77ms
+ GET / 200 in 16ms
+ GET / 200 in 12ms
+ GET / 200 in 11ms
+ ⨯ ./app/components/Classes.tsx
+Error:   [31mx[0m Unterminated regexp literal
+     ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Classes.tsx[0m:135:1]
+ [2m132[0m |         />
+ [2m133[0m |       </div>
+ [2m134[0m |     </section>
+ [2m135[0m |     </>
+     : [35;1m     ^^[0m
+ [2m136[0m |   )
+ [2m137[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/Classes.tsx
+./app/page.tsx
+ ✓ Compiled in 143ms (915 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 95ms
+ GET / 200 in 9ms
+ GET / 200 in 11ms
+ GET / 200 in 11ms
+ GET / 200 in 126ms
+ GET / 200 in 63ms
+ ✓ Compiled in 242ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 44ms
+ GET / 200 in 27ms
+ GET / 200 in 46ms
+ GET / 200 in 20ms
+ ✓ Compiled in 97ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 56ms
+ GET / 200 in 15ms
+ GET / 200 in 10ms
+ GET / 200 in 13ms
+ GET / 200 in 122ms
+ ✓ Compiled in 179ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 66ms
+ GET / 200 in 16ms
+ GET / 200 in 11ms
+ GET / 200 in 11ms
+ ✓ Compiled in 108ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 39ms
+ GET / 200 in 8ms
+ GET / 200 in 10ms
+ GET / 200 in 11ms
+ ✓ Compiled in 220ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 82ms
+ GET / 200 in 12ms
+ GET / 200 in 6ms
+ GET / 200 in 156ms
+ ✓ Compiled in 159ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 77ms
+ GET / 200 in 10ms
+ GET / 200 in 9ms
+ ✓ Compiled in 210ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 179ms
+ ✓ Compiled in 153ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 71ms
+ ✓ Compiled in 110ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 37ms
+ GET / 200 in 133ms
+ ✓ Compiled in 142ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 61ms
+ ✓ Compiled in 111ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 38ms
+ ✓ Compiled in 118ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 38ms
+ ✓ Compiled in 89ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 35ms
+ ✓ Compiled in 81ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 34ms
+ ✓ Compiled in 158ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 38ms
+ GET / 200 in 147ms
+ ✓ Compiled in 189ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 71ms
+ GET / 200 in 8ms
+ ✓ Compiled in 85ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 38ms
+ GET / 200 in 8ms
+ ✓ Compiled in 79ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 39ms
+ GET / 200 in 7ms
+ ✓ Compiled in 108ms (913 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 54ms
+ GET / 200 in 10ms
+ ✓ Compiled in 408ms (935 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 97ms
+ GET / 200 in 7ms
+ ✓ Compiled in 88ms (935 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 61ms
+ GET / 200 in 7ms
+ ✓ Compiled /_not-found in 215ms (926 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /manifest.json 404 in 334ms
+ GET / 200 in 120ms
+ GET /manifest.json 404 in 32ms
+ GET / 200 in 9ms

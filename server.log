@@ -1,0 +1,85 @@
+
+> culture-gym-website@1.0.0 dev
+> next dev
+
+ ⚠ Warning: Found multiple lockfiles. Selecting /Users/thefortob/package-lock.json.
+   Consider removing the lockfiles at:
+   * /Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/package-lock.json
+
+   ▲ Next.js 15.4.2
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.86.78:3000
+
+ ✓ Starting...
+ ✓ Ready in 1079ms
+ ○ Compiling / ...
+ ✓ Compiled / in 703ms (583 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 972ms
+ ✓ Compiled in 57ms (253 modules)
+ GET / 200 in 64ms
+ GET / 200 in 81ms
+ GET / 200 in 58ms
+ ⨯ ./app/components/Hero.tsx
+Error:   [31mx[0m Unterminated string constant
+    ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Hero.tsx[0m:55:1]
+ [2m52[0m |       {/* Main Hero Content */}
+ [2m53[0m |       <div className="relative
+ [2m54[0m |         {/* Background Image with Overlay */}
+ [2m55[0m |         <div className="absolute inset-0">
+    : [35;1m                                        ^^[0m
+ [2m56[0m |         <Image
+ [2m57[0m |           src="/images/hero-gym.jpg"
+ [2m58[0m |           alt="Culture Gym Interior"
+    `----
+  [31mx[0m Expected '</', got 'string literal (>, ">)'
+    ,-[[36;1;4m/Users/thefortob/Development/ACTIVE-PROJECTS/culture-gym-website/app/components/Hero.tsx[0m:55:1]
+ [2m52[0m |       {/* Main Hero Content */}
+ [2m53[0m |       <div className="relative
+ [2m54[0m |         {/* Background Image with Overlay */}
+ [2m55[0m |         <div className="absolute inset-0">
+    : [35;1m                                        ^^[0m
+ [2m56[0m |         <Image
+ [2m57[0m |           src="/images/hero-gym.jpg"
+ [2m58[0m |           alt="Culture Gym Interior"
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/components/Hero.tsx
+./app/page.tsx
+ ✓ Compiled in 108ms (583 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 53ms
+ GET / 200 in 17ms
+ GET / 200 in 9ms
+ ✓ Compiled in 109ms (583 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 30ms
+ GET / 200 in 10ms
+ GET / 200 in 8ms
+ GET / 200 in 136ms
+ ✓ Compiled in 135ms (583 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 52ms
+ GET / 200 in 16ms
+ GET / 200 in 13ms
+ GET / 200 in 8ms
+ ✓ Compiled in 93ms (583 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 24ms
+ GET / 200 in 10ms
+ GET / 200 in 9ms
+ GET / 200 in 8ms
+ ✓ Compiled in 142ms (583 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 22ms
+ GET / 200 in 13ms
+ GET / 200 in 9ms
+ GET / 200 in 9ms
+ GET / 200 in 137ms
+ GET / 200 in 65ms
+ GET / 200 in 76ms
+[?25h

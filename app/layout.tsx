@@ -2,17 +2,17 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "The Culture Gym Fort Wayne - Best Gym in Northeast Indiana | 24/7 Access",
-  description: "Fort Wayne's premier old school gym with 22 Hammer Strength pieces, 120lb dumbbells, 30+ group fitness classes, sauna, and 24/7 access. Located in the heart of Fort Wayne at Spiece Fieldhouse. No contracts, just results!",
-  keywords: "fort wayne gym, northeast indiana gym, 24 hour gym fort wayne, gym near me, fort wayne fitness center, powerlifting fort wayne, group fitness classes fort wayne, hammer strength gym, old school gym fort wayne, spiece fieldhouse gym, best gym fort wayne indiana",
+  title: "The Culture Gym Fort Wayne - Best Gym in Northeast Indiana",
+  description: "Fort Wayne's premier old school gym with 22 Hammer Strength pieces, 120lb dumbbells, 30+ group fitness classes, and sauna. Located in the heart of Fort Wayne at Spiece Fieldhouse. No contracts, just results!",
+  keywords: "fort wayne gym, northeast indiana gym, gym near me, fort wayne fitness center, powerlifting fort wayne, group fitness classes fort wayne, hammer strength gym, old school gym fort wayne, spiece fieldhouse gym, best gym fort wayne indiana",
   openGraph: {
     title: "The Culture Gym - Fort Wayne's Premier Fitness Destination",
-    description: "Experience Fort Wayne's best gym with 24/7 access, 30+ group classes, and old school atmosphere. Located at historic Spiece Fieldhouse.",
+    description: "Experience Fort Wayne's best gym with 30+ group classes and old school atmosphere. Located at historic Spiece Fieldhouse.",
     url: "https://theculturegym.com",
     siteName: "The Culture Gym Fort Wayne",
     images: [
       {
-        url: "/images/hero-gym.jpg",
+        url: "/images/culturegymhero.png",
         width: 1200,
         height: 630,
         alt: "The Culture Gym Fort Wayne Interior",
@@ -46,7 +46,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "HealthClub",
     name: "The Culture Gym",
-    description: "Fort Wayne's premier old school gym with 24/7 access, located at historic Spiece Fieldhouse",
+    description: "Fort Wayne's premier old school gym located at historic Spiece Fieldhouse",
     url: "https://theculturegym.com",
     telephone: "+1-260-000-0000",
     address: {
@@ -70,7 +70,6 @@ export default function RootLayout({
     },
     priceRange: "$45-$65",
     amenityFeature: [
-      { "@type": "LocationFeatureSpecification", name: "24/7 Access" },
       { "@type": "LocationFeatureSpecification", name: "Free Weights" },
       { "@type": "LocationFeatureSpecification", name: "Cardio Equipment" },
       { "@type": "LocationFeatureSpecification", name: "Group Fitness Classes" },
@@ -89,6 +88,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

@@ -12,7 +12,7 @@ export default function Hero() {
     { number: '500+', label: 'ACTIVE MEMBERS' },
     { number: '15+', label: 'YEARS STRONG' },
     { number: '30+', label: 'GROUP CLASSES' },
-    { number: '24/7', label: 'ACCESS' }
+    { number: '22', label: 'HAMMER STRENGTH' }
   ]
 
   useEffect(() => {

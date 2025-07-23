@@ -24,9 +24,9 @@ export default function CultureCard() {
       icon: "🤝"
     },
     {
-      title: "24/7 ACCESS AVAILABLE",
-      description: "Train on your schedule",
-      icon: "🔓"
+      title: "EXTENDED HOURS",
+      description: "Open early, close late",
+      icon: "⏰"
     }
   ]
 
