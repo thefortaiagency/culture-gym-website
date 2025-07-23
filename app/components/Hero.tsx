@@ -28,73 +28,28 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-gym.jpg"
+          src="/images/culturegymhero.png"
           alt="Culture Gym Interior"
           fill
-          className="object-cover"
+          className="object-cover object-top"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-culture-black/80 via-culture-black/60 to-culture-black" />
       </div>
 
-      {/* Stats Button - Floating */}
-      <button 
-        onClick={() => setShowStats(!showStats)}
-        className="absolute top-24 left-1/2 transform -translate-x-1/2 z-30 glass-red px-6 py-2 rounded-full font-bebas text-lg uppercase tracking-wider hover-lift transition-all duration-300 flex items-center gap-3"
-      >
-        <span className="text-2xl font-bold">{stats[currentStat].number}</span>
-        <span className="text-sm">{stats[currentStat].label}</span>
-        <span className="text-xs opacity-75">▼</span>
-      </button>
 
-      {/* Stats Dropdown */}
-      {showStats && (
-        <div className="absolute top-36 left-1/2 transform -translate-x-1/2 z-30 glass-dark rounded-2xl p-6 transition-all duration-300 slide-in">
-          <div className="grid grid-cols-2 gap-4">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center p-3">
-                <div className="text-2xl font-bebas text-culture-red">{stat.number}</div>
-                <div className="text-xs text-gray-300 uppercase">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
-        <h1 className={`hero-text mb-4 transition-all duration-1000 ${
+      {/* Content - Positioned at bottom */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-10 text-center px-4 max-w-6xl w-full">
+        <h1 className={`font-bebas text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider mb-4 transition-all duration-1000 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <span className="block">THE</span>
-          <span className="block text-culture-red text-crisp culture-pulse" style={{
-            fontWeight: '900',
-            fontSize: '1.15em',
-            letterSpacing: '0.08em'
-          }}>
-            <span style={{
-              textShadow: `
-                2px 2px 0 rgba(0, 0, 0, 1),
-                -1px -1px 0 rgba(0, 0, 0, 0.5),
-                1px -1px 0 rgba(0, 0, 0, 0.5),
-                -1px 1px 0 rgba(0, 0, 0, 0.5),
-                0 0 20px rgba(220, 38, 38, 0.5)
-              `,
-              fontSize: '1.1em'
-            }}>CULT</span>
-            <span style={{
-              textShadow: `
-                2px 2px 0 rgba(0, 0, 0, 1),
-                -1px -1px 0 rgba(0, 0, 0, 0.5),
-                1px -1px 0 rgba(0, 0, 0, 0.5),
-                -1px 1px 0 rgba(0, 0, 0, 0.5),
-                0 0 10px rgba(220, 38, 38, 0.3)
-              `,
-              fontSize: '0.7em',
-              opacity: 0.9
-            }}>URE</span>
+          <span className="text-culture-red">THE </span>
+          <span className="text-culture-red">
+            <span className="culture-pulse" style={{
+              textShadow: '0 0 20px rgba(220, 38, 38, 0.8), 0 0 40px rgba(220, 38, 38, 0.5), 0 0 60px rgba(220, 38, 38, 0.3)'
+            }}>CULT</span><span style={{ fontSize: '0.8em' }}>ure</span>
           </span>
-          <span className="block">GYM</span>
+          <span className="text-culture-red"> GYM</span>
         </h1>
         
         <p className={`text-xl md:text-2xl font-light mb-4 transition-all duration-1000 delay-300 ${
@@ -120,16 +75,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-700 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
-        }`}>
-          <div className="animate-bounce">
-            <svg className="w-6 h-6 text-culture-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-        </div>
       </div>
 
       {/* Decorative Elements */}
