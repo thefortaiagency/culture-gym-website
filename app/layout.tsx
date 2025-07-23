@@ -15,10 +15,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://theculturegym.com/og-image.png",
+        url: "https://theculturegym.com/og-image.png?v=2",
         width: 1200,
         height: 630,
         alt: "The Culture Gym Fort Wayne",
+        type: "image/png",
       },
     ],
   },
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Culture Gym Fort Wayne",
     description: "Fort Wayne's premier old school gym with 30+ group classes. Located at historic Spiece Fieldhouse.",
-    images: ["https://theculturegym.com/og-image.png"],
+    images: ["https://theculturegym.com/og-image.png?v=2"],
   },
   verification: {
     google: "google-site-verification-code",
