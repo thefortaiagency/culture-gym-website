@@ -452,3 +452,24 @@ Import trace for requested module:
  GET / 200 in 43ms
  ✓ Compiled in 75ms (935 modules)
  GET / 200 in 37ms
+ GET / 200 in 145ms
+ ✓ Compiled /_not-found in 205ms (926 modules)
+ GET /_next/static/chunks/app-pages-internals.js 404 in 312ms
+ GET /_next/static/chunks/main-app.js?v=1753238675778 404 in 313ms
+ GET /_next/static/chunks/app/page.js 404 in 313ms
+ GET / 200 in 104ms
+ GET / 200 in 69ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 43ms
+ GET /_next/static/chunks/main-app.js?v=1753238682452 404 in 44ms
+ GET /_next/static/chunks/app/page.js 404 in 44ms
+ ✓ Compiled in 202ms (935 modules)
+ GET / 200 in 63ms
+ GET / 200 in 97ms
+ ✓ Compiled /_not-found in 56ms (926 modules)
+ GET /_next/static/chunks/main-app.js?v=1753238773025 404 in 140ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 135ms
+ GET / 200 in 83ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 30ms
+ GET /_next/static/chunks/main-app.js?v=1753238777360 404 in 30ms
+ ✓ Compiled in 86ms (940 modules)
+ GET / 200 in 40ms

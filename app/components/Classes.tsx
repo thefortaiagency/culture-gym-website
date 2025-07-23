@@ -33,7 +33,7 @@ export default function Classes() {
   ]
 
   return (
-    <section id="classes" className="bg-culture-gray relative overflow-hidden" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
+    <section id="classes" className="bg-culture-gray relative overflow-hidden" style={{ paddingTop: '100px', paddingBottom: '80px' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="section-title mb-4">
