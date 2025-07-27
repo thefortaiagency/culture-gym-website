@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Equipment() {
   const [activeCategory, setActiveCategory] = useState('weights')
@@ -109,11 +110,25 @@ export default function Equipment() {
                   </li>
                 ))}
               </ul>
-              <button className="glass-red px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl hover-lift transition-all duration-300">
-                TOUR OUR FACILITY
-              </button>
+              <Link href="/equipment" className="glass-red px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block">
+                VIEW ALL EQUIPMENT
+              </Link>
             </div>
           </div>
+        </div>
+        
+        {/* View All Equipment Link */}
+        <div className="text-center mt-12">
+          <p className="text-lg mb-4 text-white/80">
+            Want to see all our equipment?
+          </p>
+          <Link 
+            href="/equipment" 
+            className="inline-flex items-center gap-2 text-culture-red hover:text-white transition-colors duration-300 font-bebas text-xl uppercase tracking-wider group"
+          >
+            <span>Explore Full Equipment Gallery</span>
+            <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+          </Link>
         </div>
       </div>
     </section>

@@ -18,7 +18,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '#membership', label: 'MEMBERSHIP' },
     { href: '#classes', label: 'CLASSES' },
-    { href: '#equipment', label: 'EQUIPMENT' },
+    { href: '/equipment', label: 'EQUIPMENT' },
     { href: '#about', label: 'ABOUT' },
     { href: '#contact', label: 'CONTACT' },
   ]
