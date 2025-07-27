@@ -263,6 +263,7 @@ export default function EquipmentDetailPage() {
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
+                  unoptimized
                 />
               </div>
               
@@ -285,6 +286,7 @@ export default function EquipmentDetailPage() {
                         fill
                         className="object-cover"
                         sizes="100px"
+                        unoptimized
                       />
                     </button>
                   ))}
@@ -366,6 +368,7 @@ export default function EquipmentDetailPage() {
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                         sizes="(max-width: 768px) 100vw, 33vw"
+                        unoptimized
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
