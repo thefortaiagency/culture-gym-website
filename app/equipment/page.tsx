@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-import { equipmentData } from '@/lib/equipment-data';
+import { enhancedEquipmentData } from '@/lib/equipment-data-enhanced';
 
 export default function EquipmentPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -18,8 +18,8 @@ export default function EquipmentPage() {
   ];
 
   const filteredEquipment = selectedCategory === 'all' 
-    ? equipmentData 
-    : equipmentData.filter(item => item.category === selectedCategory);
+    ? enhancedEquipmentData 
+    : enhancedEquipmentData.filter(item => item.category === selectedCategory);
 
   useEffect(() => {
     // Simulate loading
@@ -94,10 +94,20 @@ export default function EquipmentPage() {
                     <h3 className="text-2xl font-bebas text-white group-hover:text-[#A80D0D] transition-colors">
                       {item.title}
                     </h3>
-                    <div className="flex items-center justify-between mt-2">
-                      <p className="text-sm text-white/60 uppercase tracking-wider">
-                        {categories.find(c => c.id === item.category)?.name}
+                    {item.brandInfo && (
+                      <p className="text-sm text-[#A80D0D]/80 mt-1">
+                        {item.brandInfo.brand}
                       </p>
+                    )}
+                    <div className="flex items-center justify-between mt-3">
+                      <div>
+                        <p className="text-sm text-white/60 uppercase tracking-wider">
+                          {categories.find(c => c.id === item.category)?.name}
+                        </p>
+                        <p className="text-xs text-white/40 mt-1">
+                          {item.images.length} {item.images.length === 1 ? 'Machine' : 'Machines'}
+                        </p>
+                      </div>
                       <span className="text-[#A80D0D] group-hover:translate-x-1 transition-transform duration-300">
                         →
                       </span>

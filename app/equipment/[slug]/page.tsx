@@ -5,14 +5,14 @@ import { useParams, useRouter } from 'next/navigation';
 import Navbar from '../../components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-import { equipmentData } from '@/lib/equipment-data';
+import { enhancedEquipmentData } from '@/lib/equipment-data-enhanced';
 
 export default function EquipmentDetailPage() {
   const params = useParams();
   const router = useRouter();
   const slug = params.slug as string;
   
-  const equipment = equipmentData.find(item => item.slug === slug);
+  const equipment = enhancedEquipmentData.find(item => item.slug === slug);
   const [selectedImage, setSelectedImage] = useState(0);
 
   if (!equipment) {
@@ -29,7 +29,7 @@ export default function EquipmentDetailPage() {
   }
 
   // Get related equipment from same category
-  const relatedEquipment = equipmentData
+  const relatedEquipment = enhancedEquipmentData
     .filter(item => item.category === equipment.category && item.slug !== equipment.slug)
     .slice(0, 3);
 
@@ -105,6 +105,37 @@ export default function EquipmentDetailPage() {
                 </p>
               </div>
               
+              {/* Brand Information */}
+              {equipment.brandInfo && (
+                <div className="glass-dark rounded-xl p-6 border-2 border-[#A80D0D]/30">
+                  <h3 className="font-bebas text-3xl text-[#A80D0D] mb-4">
+                    {equipment.brandInfo.brand}
+                  </h3>
+                  <p className="text-white/80 mb-4">{equipment.brandInfo.description}</p>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <span className="text-white/60">Founded:</span>
+                      <span className="text-white ml-2">{equipment.brandInfo.founded}</span>
+                    </div>
+                    {equipment.brandInfo.headquarters && (
+                      <div>
+                        <span className="text-white/60">HQ:</span>
+                        <span className="text-white ml-2">{equipment.brandInfo.headquarters}</span>
+                      </div>
+                    )}
+                  </div>
+                  {equipment.brandInfo.certifications && (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {equipment.brandInfo.certifications.map((cert, idx) => (
+                        <span key={idx} className="px-3 py-1 bg-[#A80D0D]/20 text-[#A80D0D] rounded-full text-xs font-semibold">
+                          {cert}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+              
               {/* Features */}
               <div className="glass-dark rounded-xl p-6">
                 <h3 className="font-bebas text-2xl text-[#A80D0D] mb-4">
@@ -119,6 +150,23 @@ export default function EquipmentDetailPage() {
                   ))}
                 </ul>
               </div>
+              
+              {/* Detailed Specifications */}
+              {equipment.detailedSpecs && (
+                <div className="glass-dark rounded-xl p-6">
+                  <h3 className="font-bebas text-2xl text-[#A80D0D] mb-4">
+                    TECHNICAL SPECIFICATIONS
+                  </h3>
+                  <ul className="space-y-2">
+                    {equipment.detailedSpecs.map((spec, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-[#A80D0D] mr-3">•</span>
+                        <span className="text-white/80 text-sm">{spec}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               
               {/* CTA Button */}
               <div className="flex gap-4">
