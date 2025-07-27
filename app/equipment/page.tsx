@@ -4,99 +4,11 @@ import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-
-interface EquipmentItem {
-  title: string;
-  slug: string;
-  image: string;
-  category: string;
-}
+import { equipmentData } from '@/lib/equipment-data';
 
 export default function EquipmentPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [loading, setLoading] = useState(true);
-
-  // Equipment items from the screenshot
-  const equipment: EquipmentItem[] = [
-    {
-      title: 'Shoulder Equipment',
-      slug: 'shoulder-equipment',
-      image: '/images/equipment/shoulder-equipment.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'Rogue Dyna Body',
-      slug: 'rogue-dynabody',
-      image: '/images/equipment/rogue-dynabody.jpg',
-      category: 'cardio'
-    },
-    {
-      title: 'Bench Press',
-      slug: 'bench-press',
-      image: '/images/equipment/bench-press.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'Precore Icarian Paramount Equipment',
-      slug: 'precore-icarian-paramount',
-      image: '/images/equipment/precore-icarian-paramount.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'PowerLift Racks',
-      slug: 'powerlift-racks',
-      image: '/images/equipment/powerlift-racks.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'Leg Equipment',
-      slug: 'leg-equipment',
-      image: '/images/equipment/leg-equipment.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'Hammer Strength Equipment',
-      slug: 'hammer-strength',
-      image: '/images/equipment/hammer-strength.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'Free Weights Room',
-      slug: 'free-weights-room',
-      image: '/images/equipment/free-weights-room.jpg',
-      category: 'free-weights'
-    },
-    {
-      title: 'Chest Equipment',
-      slug: 'chest-equipment',
-      image: '/images/equipment/chest-equipment.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'Cardio Equipment',
-      slug: 'cardio-equipment',
-      image: '/images/equipment/cardio-equipment.jpg',
-      category: 'cardio'
-    },
-    {
-      title: 'Camstar Equipment',
-      slug: 'camstar-equipment',
-      image: '/images/equipment/camstar-equipment.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'BodyMaster Equipment',
-      slug: 'bodymaster-equipment',
-      image: '/images/equipment/bodymaster-equipment.jpg',
-      category: 'strength'
-    },
-    {
-      title: 'Back Equipment',
-      slug: 'back-equipment',
-      image: '/images/equipment/back-equipment.jpg',
-      category: 'strength'
-    }
-  ];
 
   const categories = [
     { id: 'all', name: 'All Equipment' },
@@ -106,8 +18,8 @@ export default function EquipmentPage() {
   ];
 
   const filteredEquipment = selectedCategory === 'all' 
-    ? equipment 
-    : equipment.filter(item => item.category === selectedCategory);
+    ? equipmentData 
+    : equipmentData.filter(item => item.category === selectedCategory);
 
   useEffect(() => {
     // Simulate loading
@@ -169,7 +81,7 @@ export default function EquipmentPage() {
                 >
                   <div className="aspect-[4/3] relative">
                     <Image
-                      src={item.image}
+                      src={item.images[0] || '/images/weights-section.jpg'}
                       alt={item.title}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
