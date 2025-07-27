@@ -18,67 +18,67 @@ export default function EquipmentPage() {
   const equipment: EquipmentItem[] = [
     {
       title: 'Shoulder Equipment',
-      image: '/images/weights-section.jpg',
+      image: '/images/equipment/shoulder-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'Rogue Dyna Body',
-      image: '/images/cardio-equipment.jpg',
+      image: '/images/equipment/rogue-dynabody.jpg',
       category: 'cardio'
     },
     {
       title: 'Bench Press',
-      image: '/images/weights-dark.jpg',
+      image: '/images/equipment/bench-press.jpg',
       category: 'strength'
     },
     {
       title: 'Precore Icarian Paramount Equipment',
-      image: '/images/gym-interior.jpg',
+      image: '/images/equipment/precore-icarian-paramount.jpg',
       category: 'strength'
     },
     {
       title: 'PowerLift Racks',
-      image: '/images/training-area.jpg',
+      image: '/images/equipment/powerlift-racks.jpg',
       category: 'strength'
     },
     {
       title: 'Leg Equipment',
-      image: '/images/weights-section.jpg',
+      image: '/images/equipment/leg-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'Hammer Strength Equipment',
-      image: '/images/weights-dark.jpg',
+      image: '/images/equipment/hammer-strength.jpg',
       category: 'strength'
     },
     {
       title: 'Free Weights Room',
-      image: '/images/barbell-dark.jpg',
+      image: '/images/equipment/free-weights-room.jpg',
       category: 'free-weights'
     },
     {
       title: 'Chest Equipment',
-      image: '/images/gym-interior.jpg',
+      image: '/images/equipment/chest-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'Cardio Equipment',
-      image: '/images/cardio-equipment.jpg',
+      image: '/images/equipment/cardio-equipment.jpg',
       category: 'cardio'
     },
     {
       title: 'Camstar Equipment',
-      image: '/images/training-area.jpg',
+      image: '/images/equipment/camstar-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'BodyMaster Equipment',
-      image: '/images/weights-dark.jpg',
+      image: '/images/equipment/bodymaster-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'Back Equipment',
-      image: '/images/weights-section.jpg',
+      image: '/images/equipment/back-equipment.jpg',
       category: 'strength'
     }
   ];
