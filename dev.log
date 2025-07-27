@@ -473,3 +473,4 @@ Import trace for requested module:
  GET /_next/static/chunks/main-app.js?v=1753238777360 404 in 30ms
  ✓ Compiled in 86ms (940 modules)
  GET / 200 in 40ms
+[?25h

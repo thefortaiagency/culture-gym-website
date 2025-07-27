@@ -18,67 +18,67 @@ export default function EquipmentPage() {
   const equipment: EquipmentItem[] = [
     {
       title: 'Shoulder Equipment',
-      image: '/images/equipment/shoulder-equipment.jpg',
+      image: '/images/weights-section.jpg',
       category: 'strength'
     },
     {
       title: 'Rogue Dyna Body',
-      image: '/images/equipment/rogue-dynabody.jpg',
+      image: '/images/cardio-equipment.jpg',
       category: 'cardio'
     },
     {
       title: 'Bench Press',
-      image: '/images/equipment/bench-press.jpg',
+      image: '/images/weights-dark.jpg',
       category: 'strength'
     },
     {
       title: 'Precore Icarian Paramount Equipment',
-      image: '/images/equipment/precore-icarian-paramount.jpg',
+      image: '/images/gym-interior.jpg',
       category: 'strength'
     },
     {
       title: 'PowerLift Racks',
-      image: '/images/equipment/powerlift-racks.jpg',
+      image: '/images/training-area.jpg',
       category: 'strength'
     },
     {
       title: 'Leg Equipment',
-      image: '/images/equipment/leg-equipment.jpg',
+      image: '/images/weights-section.jpg',
       category: 'strength'
     },
     {
       title: 'Hammer Strength Equipment',
-      image: '/images/equipment/hammer-strength.jpg',
+      image: '/images/weights-dark.jpg',
       category: 'strength'
     },
     {
       title: 'Free Weights Room',
-      image: '/images/equipment/free-weights-room.jpg',
+      image: '/images/barbell-dark.jpg',
       category: 'free-weights'
     },
     {
       title: 'Chest Equipment',
-      image: '/images/equipment/chest-equipment.jpg',
+      image: '/images/gym-interior.jpg',
       category: 'strength'
     },
     {
       title: 'Cardio Equipment',
-      image: '/images/equipment/cardio-equipment.jpg',
+      image: '/images/cardio-equipment.jpg',
       category: 'cardio'
     },
     {
       title: 'Camstar Equipment',
-      image: '/images/equipment/camstar-equipment.jpg',
+      image: '/images/training-area.jpg',
       category: 'strength'
     },
     {
       title: 'BodyMaster Equipment',
-      image: '/images/equipment/bodymaster-equipment.jpg',
+      image: '/images/weights-dark.jpg',
       category: 'strength'
     },
     {
       title: 'Back Equipment',
-      image: '/images/equipment/back-equipment.jpg',
+      image: '/images/weights-section.jpg',
       category: 'strength'
     }
   ];
@@ -124,10 +124,10 @@ export default function EquipmentPage() {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all ${
+                className={`font-bebas text-xl md:text-2xl px-6 py-3 uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 ${
                   selectedCategory === category.id
-                    ? 'bg-[#A80D0D] text-white'
-                    : 'bg-white/10 text-white/70 hover:bg-white/20'
+                    ? 'glass-red'
+                    : 'glass-dark hover:border-culture-red/30'
                 }`}
               >
                 {category.name}
@@ -187,7 +187,7 @@ export default function EquipmentPage() {
           </p>
           <a
             href="/#membership"
-            className="inline-block bg-[#A80D0D] text-white px-8 py-4 rounded-full font-bold hover:bg-[#8B0000] transform hover:scale-105 transition-all duration-300"
+            className="glass-red px-8 py-4 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block"
           >
             View Membership Options
           </a>
