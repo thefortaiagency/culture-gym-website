@@ -3,9 +3,11 @@
 import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface EquipmentItem {
   title: string;
+  slug: string;
   image: string;
   category: string;
 }
@@ -18,66 +20,79 @@ export default function EquipmentPage() {
   const equipment: EquipmentItem[] = [
     {
       title: 'Shoulder Equipment',
+      slug: 'shoulder-equipment',
       image: '/images/equipment/shoulder-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'Rogue Dyna Body',
+      slug: 'rogue-dynabody',
       image: '/images/equipment/rogue-dynabody.jpg',
       category: 'cardio'
     },
     {
       title: 'Bench Press',
+      slug: 'bench-press',
       image: '/images/equipment/bench-press.jpg',
       category: 'strength'
     },
     {
       title: 'Precore Icarian Paramount Equipment',
+      slug: 'precore-icarian-paramount',
       image: '/images/equipment/precore-icarian-paramount.jpg',
       category: 'strength'
     },
     {
       title: 'PowerLift Racks',
+      slug: 'powerlift-racks',
       image: '/images/equipment/powerlift-racks.jpg',
       category: 'strength'
     },
     {
       title: 'Leg Equipment',
+      slug: 'leg-equipment',
       image: '/images/equipment/leg-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'Hammer Strength Equipment',
+      slug: 'hammer-strength',
       image: '/images/equipment/hammer-strength.jpg',
       category: 'strength'
     },
     {
       title: 'Free Weights Room',
+      slug: 'free-weights-room',
       image: '/images/equipment/free-weights-room.jpg',
       category: 'free-weights'
     },
     {
       title: 'Chest Equipment',
+      slug: 'chest-equipment',
       image: '/images/equipment/chest-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'Cardio Equipment',
+      slug: 'cardio-equipment',
       image: '/images/equipment/cardio-equipment.jpg',
       category: 'cardio'
     },
     {
       title: 'Camstar Equipment',
+      slug: 'camstar-equipment',
       image: '/images/equipment/camstar-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'BodyMaster Equipment',
+      slug: 'bodymaster-equipment',
       image: '/images/equipment/bodymaster-equipment.jpg',
       category: 'strength'
     },
     {
       title: 'Back Equipment',
+      slug: 'back-equipment',
       image: '/images/equipment/back-equipment.jpg',
       category: 'strength'
     }
@@ -147,9 +162,10 @@ export default function EquipmentPage() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredEquipment.map((item, index) => (
-                <div
+                <Link
                   key={index}
-                  className="group relative overflow-hidden rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:border-[#A80D0D]/50 transition-all duration-300"
+                  href={`/equipment/${item.slug}`}
+                  className="group relative overflow-hidden rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:border-[#A80D0D]/50 transition-all duration-300 block"
                 >
                   <div className="aspect-[4/3] relative">
                     <Image
@@ -165,11 +181,16 @@ export default function EquipmentPage() {
                     <h3 className="text-2xl font-bebas text-white group-hover:text-[#A80D0D] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-white/60 uppercase tracking-wider mt-2">
-                      {categories.find(c => c.id === item.category)?.name}
-                    </p>
+                    <div className="flex items-center justify-between mt-2">
+                      <p className="text-sm text-white/60 uppercase tracking-wider">
+                        {categories.find(c => c.id === item.category)?.name}
+                      </p>
+                      <span className="text-[#A80D0D] group-hover:translate-x-1 transition-transform duration-300">
+                        →
+                      </span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           )}
