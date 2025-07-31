@@ -5,14 +5,16 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import BottomNav from '../components/BottomNav'
 
-// Social media posts data - using existing images
+// Complete social media and gym photos data
 const socialPosts = [
+  // Original Facebook/Social Posts
   {
     id: 1,
     image: '/images/514231131_1310414934424286_1460178885306871256_n.jpg',
     caption: 'Welcome to The Culture Gym! 💪',
     date: '2024-01-15',
     platform: 'facebook',
+    category: 'social',
     likes: 234,
     link: 'https://www.facebook.com/culturegymfw'
   },
@@ -22,6 +24,7 @@ const socialPosts = [
     caption: 'New equipment alert! Check out our latest additions 🔥',
     date: '2024-01-20',
     platform: 'facebook',
+    category: 'social',
     likes: 189,
     link: 'https://www.facebook.com/culturegymfw'
   },
@@ -31,6 +34,7 @@ const socialPosts = [
     caption: 'Group fitness classes in full swing! Join us! 🏋️‍♀️',
     date: '2024-01-25',
     platform: 'facebook',
+    category: 'social',
     likes: 312,
     link: 'https://www.facebook.com/culturegymfw'
   },
@@ -40,6 +44,7 @@ const socialPosts = [
     caption: 'FIX IT. CLEAN IT. BE NICE. Our culture in action! 💯',
     date: '2024-02-01',
     platform: 'facebook',
+    category: 'social',
     likes: 456,
     link: 'https://www.facebook.com/culturegymfw'
   },
@@ -49,6 +54,7 @@ const socialPosts = [
     caption: 'Beast mode activated! 🦾 #CultureGym',
     date: '2024-02-05',
     platform: 'instagram',
+    category: 'social',
     likes: 521,
     link: 'https://www.instagram.com/culturegymfw'
   },
@@ -58,6 +64,7 @@ const socialPosts = [
     caption: 'Community strong at The Culture Gym! 🤝',
     date: '2024-02-10',
     platform: 'instagram',
+    category: 'social',
     likes: 398,
     link: 'https://www.instagram.com/culturegymfw'
   },
@@ -67,6 +74,7 @@ const socialPosts = [
     caption: 'Transform your body, transform your life! 🚀',
     date: '2024-02-15',
     platform: 'instagram',
+    category: 'social',
     likes: 445,
     link: 'https://www.instagram.com/culturegymfw'
   },
@@ -76,6 +84,7 @@ const socialPosts = [
     caption: 'Hammer Strength heaven! 22 pieces and counting! 💪',
     date: '2024-02-20',
     platform: 'facebook',
+    category: 'social',
     likes: 378,
     link: 'https://www.facebook.com/culturegymfw'
   },
@@ -85,6 +94,7 @@ const socialPosts = [
     caption: 'Early morning grind! Who\'s with us? 🌅',
     date: '2024-02-25',
     platform: 'instagram',
+    category: 'social',
     likes: 567,
     link: 'https://www.instagram.com/culturegymfw'
   },
@@ -94,6 +104,7 @@ const socialPosts = [
     caption: 'Group fitness classes - where community meets fitness! 🏃‍♂️',
     date: '2024-03-01',
     platform: 'facebook',
+    category: 'social',
     likes: 423,
     link: 'https://www.facebook.com/culturegymfw'
   },
@@ -103,6 +114,7 @@ const socialPosts = [
     caption: 'Spiece Fieldhouse legacy continues! 🏛️',
     date: '2024-03-05',
     platform: 'instagram',
+    category: 'social',
     likes: 489,
     link: 'https://www.instagram.com/culturegymfw'
   },
@@ -112,6 +124,7 @@ const socialPosts = [
     caption: 'No contracts, just commitment! Join the Culture! 🎯',
     date: '2024-03-10',
     platform: 'facebook',
+    category: 'social',
     likes: 512,
     link: 'https://www.facebook.com/culturegymfw'
   },
@@ -121,23 +134,202 @@ const socialPosts = [
     caption: 'Fort Wayne\'s old school gym with new school vibes! 🔥',
     date: '2024-03-15',
     platform: 'instagram',
+    category: 'social',
     likes: 634,
     link: 'https://www.instagram.com/culturegymfw'
+  },
+
+  // Group Fitness Photos
+  {
+    id: 14,
+    image: '/images/group fitness/IMG_1136.JPG',
+    caption: 'Group fitness energy is UNMATCHED! 💥',
+    date: '2024-03-20',
+    platform: 'instagram',
+    category: 'group-fitness',
+    likes: 445,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+  {
+    id: 15,
+    image: '/images/group fitness/IMG_1356.JPG',
+    caption: 'Morning warriors crushing their goals! 🌅💪',
+    date: '2024-03-22',
+    platform: 'facebook',
+    category: 'group-fitness',
+    likes: 367,
+    link: 'https://www.facebook.com/culturegymfw'
+  },
+  {
+    id: 16,
+    image: '/images/group fitness/IMG_1357.JPG',
+    caption: 'Community that sweats together, stays together! 🔥',
+    date: '2024-03-25',
+    platform: 'instagram',
+    category: 'group-fitness',
+    likes: 523,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+  {
+    id: 17,
+    image: '/images/group fitness/IMG_1358.JPG',
+    caption: 'High-intensity, high-energy, high-results! ⚡',
+    date: '2024-03-28',
+    platform: 'facebook',
+    category: 'group-fitness',
+    likes: 389,
+    link: 'https://www.facebook.com/culturegymfw'
+  },
+  {
+    id: 18,
+    image: '/images/group fitness/IMG_1359.JPG',
+    caption: 'Push your limits in our group fitness classes! 🚀',
+    date: '2024-04-01',
+    platform: 'instagram',
+    category: 'group-fitness',
+    likes: 456,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+  {
+    id: 19,
+    image: '/images/group fitness/IMG_1360.JPG',
+    caption: 'Functional fitness that builds real strength! 💯',
+    date: '2024-04-03',
+    platform: 'facebook',
+    category: 'group-fitness',
+    likes: 298,
+    link: 'https://www.facebook.com/culturegymfw'
+  },
+  {
+    id: 20,
+    image: '/images/group fitness/IMG_1361.JPG',
+    caption: 'Every rep counts, every member matters! 👥',
+    date: '2024-04-05',
+    platform: 'instagram',
+    category: 'group-fitness',
+    likes: 512,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+  {
+    id: 21,
+    image: '/images/group fitness/IMG_1365.JPG',
+    caption: 'State-of-the-art group fitness room! 🏢✨',
+    date: '2024-04-08',
+    platform: 'facebook',
+    category: 'group-fitness',
+    likes: 334,
+    link: 'https://www.facebook.com/culturegymfw'
+  },
+  {
+    id: 22,
+    image: '/images/group fitness/IMG_8123.JPG',
+    caption: '30+ group classes - find your perfect fit! 📋',
+    date: '2024-04-10',
+    platform: 'instagram',
+    category: 'group-fitness',
+    likes: 478,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+
+  // Equipment Showcase - Featured pieces
+  {
+    id: 23,
+    image: '/images/equipment/hammer-strength/IMG_1873.jpeg',
+    caption: 'Hammer Strength - the gold standard! 🏆',
+    date: '2024-04-12',
+    platform: 'instagram',
+    category: 'equipment',
+    likes: 567,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+  {
+    id: 24,
+    image: '/images/equipment/cardio-equipment/IMG_1760.jpeg',
+    caption: 'Cardio that doesn\'t feel like work! 🏃‍♂️',
+    date: '2024-04-15',
+    platform: 'facebook',
+    category: 'equipment',
+    likes: 345,
+    link: 'https://www.facebook.com/culturegymfw'
+  },
+  {
+    id: 25,
+    image: '/images/equipment/powerlift-racks/IMG_1871.jpeg',
+    caption: 'Power rack paradise for serious lifters! 🏋️‍♀️',
+    date: '2024-04-18',
+    platform: 'instagram',
+    category: 'equipment',
+    likes: 623,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+  {
+    id: 26,
+    image: '/images/equipment/free-weights-room.jpg',
+    caption: 'Free weights room - where legends are made! 💪',
+    date: '2024-04-20',
+    platform: 'facebook',
+    category: 'equipment',
+    likes: 445,
+    link: 'https://www.facebook.com/culturegymfw'
+  },
+
+  // Gym Atmosphere
+  {
+    id: 27,
+    image: '/images/gym-interior.jpg',
+    caption: 'Step inside Fort Wayne\'s premier fitness destination! 🏛️',
+    date: '2024-04-22',
+    platform: 'instagram',
+    category: 'atmosphere',
+    likes: 543,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+  {
+    id: 28,
+    image: '/images/training-area.jpg',
+    caption: 'Training area where goals become reality! 🎯',
+    date: '2024-04-25',
+    platform: 'facebook',
+    category: 'atmosphere',
+    likes: 398,
+    link: 'https://www.facebook.com/culturegymfw'
+  },
+  {
+    id: 29,
+    image: '/images/weights-section.jpg',
+    caption: 'Weight section that serious lifters call home! 🏠',
+    date: '2024-04-28',
+    platform: 'instagram',
+    category: 'atmosphere',
+    likes: 612,
+    link: 'https://www.instagram.com/culturegymfw'
+  },
+  {
+    id: 30,
+    image: '/images/pic1.jpg',
+    caption: 'The Culture Gym - where fitness meets community! 🤝',
+    date: '2024-05-01',
+    platform: 'facebook',
+    category: 'atmosphere',
+    likes: 467,
+    link: 'https://www.facebook.com/culturegymfw'
   }
 ]
 
 export default function SocialPage() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [selectedPlatform, setSelectedPlatform] = useState('all')
+  const [selectedFilter, setSelectedFilter] = useState('all')
   const [hoveredPost, setHoveredPost] = useState<number | null>(null)
 
   useEffect(() => {
     setIsLoaded(true)
   }, [])
 
-  const filteredPosts = selectedPlatform === 'all' 
+  const filteredPosts = selectedFilter === 'all' 
     ? socialPosts 
-    : socialPosts.filter(post => post.platform === selectedPlatform)
+    : selectedFilter === 'instagram' || selectedFilter === 'facebook'
+    ? socialPosts.filter(post => post.platform === selectedFilter)
+    : socialPosts.filter(post => post.category === selectedFilter)
 
   return (
     <>
@@ -156,22 +348,52 @@ export default function SocialPage() {
                 Follow our journey on social media
               </p>
               
-              {/* Platform Filter */}
-              <div className="flex justify-center gap-4 mb-8">
+              {/* Filter Categories */}
+              <div className="flex flex-wrap justify-center gap-3 mb-8">
                 <button
-                  onClick={() => setSelectedPlatform('all')}
-                  className={`px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl transition-all ${
-                    selectedPlatform === 'all' 
+                  onClick={() => setSelectedFilter('all')}
+                  className={`px-4 py-2 font-bebas text-sm md:text-lg uppercase tracking-wider rounded-xl transition-all ${
+                    selectedFilter === 'all' 
                       ? 'glass-red' 
                       : 'glass-dark hover:glass-red'
                   }`}
                 >
-                  All Posts
+                  All Photos
                 </button>
                 <button
-                  onClick={() => setSelectedPlatform('instagram')}
-                  className={`px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl transition-all ${
-                    selectedPlatform === 'instagram' 
+                  onClick={() => setSelectedFilter('group-fitness')}
+                  className={`px-4 py-2 font-bebas text-sm md:text-lg uppercase tracking-wider rounded-xl transition-all ${
+                    selectedFilter === 'group-fitness' 
+                      ? 'glass-red' 
+                      : 'glass-dark hover:glass-red'
+                  }`}
+                >
+                  Group Fitness
+                </button>
+                <button
+                  onClick={() => setSelectedFilter('equipment')}
+                  className={`px-4 py-2 font-bebas text-sm md:text-lg uppercase tracking-wider rounded-xl transition-all ${
+                    selectedFilter === 'equipment' 
+                      ? 'glass-red' 
+                      : 'glass-dark hover:glass-red'
+                  }`}
+                >
+                  Equipment
+                </button>
+                <button
+                  onClick={() => setSelectedFilter('atmosphere')}
+                  className={`px-4 py-2 font-bebas text-sm md:text-lg uppercase tracking-wider rounded-xl transition-all ${
+                    selectedFilter === 'atmosphere' 
+                      ? 'glass-red' 
+                      : 'glass-dark hover:glass-red'
+                  }`}
+                >
+                  Atmosphere
+                </button>
+                <button
+                  onClick={() => setSelectedFilter('instagram')}
+                  className={`px-4 py-2 font-bebas text-sm md:text-lg uppercase tracking-wider rounded-xl transition-all ${
+                    selectedFilter === 'instagram' 
                       ? 'glass-red' 
                       : 'glass-dark hover:glass-red'
                   }`}
@@ -179,9 +401,9 @@ export default function SocialPage() {
                   Instagram
                 </button>
                 <button
-                  onClick={() => setSelectedPlatform('facebook')}
-                  className={`px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl transition-all ${
-                    selectedPlatform === 'facebook' 
+                  onClick={() => setSelectedFilter('facebook')}
+                  className={`px-4 py-2 font-bebas text-sm md:text-lg uppercase tracking-wider rounded-xl transition-all ${
+                    selectedFilter === 'facebook' 
                       ? 'glass-red' 
                       : 'glass-dark hover:glass-red'
                   }`}
@@ -218,6 +440,16 @@ export default function SocialPage() {
         {/* Gallery Grid */}
         <section className="py-12">
           <div className="container mx-auto px-4">
+            {/* Results Counter */}
+            <div className="text-center mb-8">
+              <p className="text-lg text-gray-300">
+                Showing <span className="text-culture-red font-bebas text-xl">{filteredPosts.length}</span> photos
+                {selectedFilter !== 'all' && (
+                  <span> in <span className="text-culture-red font-bebas capitalize">{selectedFilter.replace('-', ' ')}</span></span>
+                )}
+              </p>
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {filteredPosts.map((post, index) => (
                 <div
