@@ -23,6 +23,7 @@ export default function Navbar() {
     { href: isHomePage ? '#membership' : '/#membership', label: 'MEMBERSHIP' },
     { href: isHomePage ? '#classes' : '/#classes', label: 'CLASSES' },
     { href: '/equipment', label: 'EQUIPMENT' },
+    { href: '/social', label: 'SOCIAL' },
     { href: isHomePage ? '#about' : '/#about', label: 'ABOUT' },
     { href: isHomePage ? '#contact' : '/#contact', label: 'CONTACT' },
   ]
