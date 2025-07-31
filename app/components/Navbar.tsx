@@ -38,9 +38,9 @@ export default function Navbar() {
               <Image
                 src="/images/culturelogo2.png"
                 alt="The Culture Gym"
-                width={180}
-                height={60}
-                className="brightness-0 invert"
+                width={240}
+                height={80}
+                className="brightness-0 invert w-[140px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[240px]"
               />
             </Link>
           </div>
