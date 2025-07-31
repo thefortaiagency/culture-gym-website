@@ -32,16 +32,18 @@ export default function Navbar() {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-culture-black/95 backdrop-blur-md py-3' : 'bg-transparent py-4'
     }`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <Link href="/" className="cursor-pointer">
+      <div className="container mx-auto px-4 max-w-full">
+        <div className="flex items-center justify-between min-h-[60px]">
+          <div className="flex items-center flex-shrink-0">
+            <Link href="/" className="cursor-pointer block">
               <Image
                 src="/images/culturelogo2.png"
                 alt="The Culture Gym"
                 width={300}
                 height={100}
-                className="brightness-0 invert w-[160px] h-auto sm:w-[220px] md:w-[260px] lg:w-[280px] xl:w-[300px]"
+                className="brightness-0 invert w-[140px] min-w-[140px] max-w-none h-auto xs:w-[160px] sm:w-[200px] md:w-[240px] lg:w-[270px] xl:w-[300px] 2xl:w-[320px]"
+                priority
+                style={{ display: 'block' }}
               />
             </Link>
           </div>
