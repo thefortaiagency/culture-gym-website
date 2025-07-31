@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-culture-black/95 backdrop-blur-md py-2' : 'bg-transparent py-4'
+      isScrolled ? 'bg-culture-black/95 backdrop-blur-md py-3' : 'bg-transparent py-4'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
@@ -38,9 +38,9 @@ export default function Navbar() {
               <Image
                 src="/images/culturelogo2.png"
                 alt="The Culture Gym"
-                width={240}
-                height={80}
-                className="brightness-0 invert w-[140px] h-auto sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[240px]"
+                width={300}
+                height={100}
+                className="brightness-0 invert w-[160px] h-auto sm:w-[220px] md:w-[260px] lg:w-[280px] xl:w-[300px]"
               />
             </Link>
           </div>
