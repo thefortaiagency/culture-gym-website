@@ -371,16 +371,6 @@ export default function SocialPage() {
                   Group Fitness
                 </button>
                 <button
-                  onClick={() => setSelectedFilter('equipment')}
-                  className={`px-4 py-2 font-bebas text-sm md:text-lg uppercase tracking-wider rounded-xl transition-all ${
-                    selectedFilter === 'equipment' 
-                      ? 'glass-red' 
-                      : 'glass-dark hover:glass-red'
-                  }`}
-                >
-                  Equipment
-                </button>
-                <button
                   onClick={() => setSelectedFilter('instagram')}
                   className={`px-4 py-2 font-bebas text-sm md:text-lg uppercase tracking-wider rounded-xl transition-all ${
                     selectedFilter === 'instagram' 
