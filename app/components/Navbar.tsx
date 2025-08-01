@@ -20,7 +20,7 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: isHomePage ? '#membership' : '/#membership', label: 'MEMBERSHIP' },
+    { href: '/membership', label: 'MEMBERSHIP' },
     { href: isHomePage ? '#classes' : '/#classes', label: 'CLASSES' },
     { href: '/equipment', label: 'EQUIPMENT' },
     { href: '/social', label: 'SOCIAL' },

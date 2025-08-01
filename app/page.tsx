@@ -5,7 +5,6 @@ import CultureCard from './components/CultureCard'
 import About from './components/About'
 import Equipment from './components/Equipment'
 import Classes from './components/Classes'
-import Membership from './components/Membership'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import SmoothScroll from './components/SmoothScroll'
@@ -18,7 +17,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <CultureCard />
-      <Membership />
       <Classes />
       <Equipment />
       <About />

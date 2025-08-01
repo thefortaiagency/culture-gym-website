@@ -114,9 +114,14 @@ export default function Contact() {
 
           {/* CTA */}
           <div className="text-center mt-12 space-y-4">
-            <button className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl pulse-glow hover-lift transition-all duration-300">
+            <a 
+              href="https://thecultgym.fliipapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl pulse-glow hover-lift transition-all duration-300 inline-block"
+            >
               START FREE TRIAL
-            </button>
+            </a>
             <p className="text-gray-400">No credit card required</p>
           </div>
         </div>

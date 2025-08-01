@@ -130,9 +130,7 @@ export default function EquipmentPage() {
             Our equipment is maintained daily and our staff is always available to help you get the most out of your workout.
           </p>
           <a
-            href="https://thecultgym.fliipapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/membership"
             className="glass-red px-8 py-4 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block"
           >
             View Membership Options

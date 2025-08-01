@@ -2,7 +2,7 @@
 
 export default function BottomNav() {
   const navSections = [
-    { href: '#membership', label: 'Membership' },
+    { href: '/membership', label: 'Membership' },
     { href: '#classes', label: 'Classes' },
     { href: '/equipment', label: 'Equipment' },
     { href: '/social', label: 'Social Media' },
