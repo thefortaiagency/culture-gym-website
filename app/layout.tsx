@@ -3,7 +3,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "The Culture Gym Fort Wayne - Best Gym in Northeast Indiana",
-  description: "Fort Wayne's premier old school gym with 22 Hammer Strength pieces, 120lb dumbbells, 30+ group fitness classes, and sauna. Located in the heart of Fort Wayne at Spiece Fieldhouse. No contracts, just results!",
+  description: "Fort Wayne's premier old school gym with 22 Hammer Strength pieces, 130lb dumbbells, 30+ group fitness classes, and sauna. Located in the heart of Fort Wayne at Spiece Fieldhouse. No contracts, just results!",
   keywords: "fort wayne gym, northeast indiana gym, gym near me, fort wayne fitness center, powerlifting fort wayne, group fitness classes fort wayne, hammer strength gym, old school gym fort wayne, spiece fieldhouse gym, best gym fort wayne indiana",
   metadataBase: new URL('https://theculturegym.com'),
   openGraph: {

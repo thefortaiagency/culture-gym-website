@@ -29,7 +29,7 @@ export default function About() {
     { number: '20+', label: 'YEARS OF LEGACY', icon: '🏆' },
     { number: '22', label: 'HAMMER STRENGTH PIECES', icon: '💪' },
     { number: '30', label: 'GROUP CLASSES', icon: '🔥' },
-    { number: '120', label: 'LBS MAX DUMBBELLS', icon: '⚡' },
+    { number: '130', label: 'LBS MAX DUMBBELLS', icon: '⚡' },
   ]
 
   return (

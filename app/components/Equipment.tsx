@@ -13,7 +13,7 @@ export default function Equipment() {
       items: [
         '4 sets of dumbbells up to 50 lbs',
         '2 sets up to 100 lbs',
-        'Dumbbells up to 120 lbs',
+        'Dumbbells up to 130 lbs',
         '3 power lift cages with deadlift platforms',
         '2 additional power racks',
       ],
