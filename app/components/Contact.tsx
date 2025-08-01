@@ -50,6 +50,31 @@ export default function Contact() {
                 <p className="text-xl">Email: info@theculturegym.com</p>
               </div>
 
+              {/* Mobile App */}
+              <div>
+                <h3 className="font-bebas text-2xl text-culture-red mb-3">DOWNLOAD OUR APP</h3>
+                <div className="flex gap-3">
+                  <a
+                    href="https://apps.apple.com/us/app/fliip-app/id1463973940"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="glass px-4 py-2 rounded-lg hover-lift transition-all duration-300 flex items-center gap-2 text-sm"
+                  >
+                    <span className="text-xl">🍎</span>
+                    <span>iOS</span>
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.fliipmobileapp&hl=en_US&gl=US&pli=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="glass px-4 py-2 rounded-lg hover-lift transition-all duration-300 flex items-center gap-2 text-sm"
+                  >
+                    <span className="text-xl">🤖</span>
+                    <span>Android</span>
+                  </a>
+                </div>
+              </div>
+
               <div className="flex gap-4">
                 <a 
                   href="https://www.facebook.com/spiecefitness" 

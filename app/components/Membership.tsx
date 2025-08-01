@@ -116,7 +116,7 @@ export default function Membership() {
         </div>
 
         {/* Discounts */}
-        <div className="glass-dark p-8 rounded-2xl max-w-4xl mx-auto slide-in hover-lift">
+        <div className="glass-dark p-8 rounded-2xl max-w-4xl mx-auto mb-12 slide-in hover-lift">
           <h3 className="font-bebas text-3xl text-center text-culture-red mb-6">
             SPECIAL DISCOUNTS AVAILABLE
           </h3>
@@ -130,6 +130,42 @@ export default function Membership() {
                 <span className="text-sm uppercase font-medium">{discount}</span>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Mobile App Section */}
+        <div className="glass-dark p-8 rounded-2xl max-w-4xl mx-auto slide-in hover-lift text-center">
+          <h3 className="font-bebas text-3xl text-culture-red mb-4">
+            ALREADY A MEMBER?
+          </h3>
+          <p className="text-xl mb-6">Download the Fliip app to manage your membership</p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://apps.apple.com/us/app/fliip-app/id1463973940"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass px-6 py-3 rounded-xl hover-lift transition-all duration-300 flex items-center gap-3 group"
+            >
+              <span className="text-3xl">🍎</span>
+              <div className="text-left">
+                <div className="text-xs text-gray-400">Download on the</div>
+                <div className="font-bebas text-lg group-hover:text-culture-red transition-colors">App Store</div>
+              </div>
+            </a>
+            
+            <a
+              href="https://play.google.com/store/apps/details?id=com.fliipmobileapp&hl=en_US&gl=US&pli=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass px-6 py-3 rounded-xl hover-lift transition-all duration-300 flex items-center gap-3 group"
+            >
+              <span className="text-3xl">🤖</span>
+              <div className="text-left">
+                <div className="text-xs text-gray-400">Get it on</div>
+                <div className="font-bebas text-lg group-hover:text-culture-red transition-colors">Google Play</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

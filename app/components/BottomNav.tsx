@@ -91,6 +91,31 @@ export default function BottomNav() {
                 </a>
               ))}
             </div>
+            
+            {/* App Downloads */}
+            <div className="mt-6 pt-6 border-t border-culture-gray/50">
+              <p className="text-sm text-gray-400 mb-3">Get the Fliip App</p>
+              <div className="flex gap-3">
+                <a
+                  href="https://apps.apple.com/us/app/fliip-app/id1463973940"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glass-dark px-3 py-1.5 rounded-lg hover:glass-red transition-all duration-300 hover-lift flex items-center gap-2 text-xs"
+                >
+                  <span>🍎</span>
+                  <span>App Store</span>
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.fliipmobileapp&hl=en_US&gl=US&pli=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glass-dark px-3 py-1.5 rounded-lg hover:glass-red transition-all duration-300 hover-lift flex items-center gap-2 text-xs"
+                >
+                  <span>🤖</span>
+                  <span>Google Play</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
