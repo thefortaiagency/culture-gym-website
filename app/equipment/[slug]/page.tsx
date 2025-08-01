@@ -170,12 +170,14 @@ export default function EquipmentDetailPage() {
               
               {/* CTA Button */}
               <div className="flex gap-4">
-                <Link
-                  href="/#membership"
+                <a
+                  href="https://thecultgym.fliipapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="glass-red px-8 py-4 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block text-center flex-1"
                 >
                   Start Training Today
-                </Link>
+                </a>
                 <Link
                   href="/#contact"
                   className="glass-dark px-8 py-4 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block text-center hover:border-[#A80D0D]/50"

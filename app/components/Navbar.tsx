@@ -59,9 +59,14 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link href={isHomePage ? "#membership" : "/#membership"} className="glass-red px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block">
+            <a 
+              href="https://thecultgym.fliipapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-red px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block"
+            >
               JOIN NOW
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -86,9 +91,14 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link href={isHomePage ? "#membership" : "/#membership"} className="glass-red px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 w-full mt-4 inline-block text-center">
+            <a 
+              href="https://thecultgym.fliipapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-red px-6 py-3 font-bebas text-lg uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 w-full mt-4 inline-block text-center"
+            >
               JOIN NOW
-            </Link>
+            </a>
           </div>
         )}
       </div>

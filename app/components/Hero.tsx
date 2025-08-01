@@ -67,7 +67,12 @@ export default function Hero() {
         <div className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-500 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <a href="#membership" className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl pulse-glow hover-lift inline-block">
+          <a 
+            href="https://thecultgym.fliipapp.com/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl pulse-glow hover-lift inline-block"
+          >
             START YOUR JOURNEY
           </a>
           <a href="#classes" className="glass-dark px-8 py-4 font-bebas text-2xl uppercase tracking-wider hover-lift transition-all duration-300 inline-block rounded-xl border border-culture-red/30">

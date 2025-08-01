@@ -99,13 +99,18 @@ export default function Membership() {
                 ))}
               </ul>
               
-              <button className={`w-full py-3 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 ${
-                plan.popular
-                  ? 'glass-red'
-                  : 'glass-dark border border-culture-red/30 hover:glass-red'
-              }`}>
+              <a 
+                href="https://thecultgym.fliipapp.com/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full py-3 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift transition-all duration-300 inline-block text-center ${
+                  plan.popular
+                    ? 'glass-red'
+                    : 'glass-dark border border-culture-red/30 hover:glass-red'
+                }`}
+              >
                 GET STARTED
-              </button>
+              </a>
             </div>
           ))}
         </div>

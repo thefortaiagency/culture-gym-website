@@ -11,7 +11,7 @@ export default function BottomNav() {
   ]
 
   const quickLinks = [
-    { href: '#membership', label: 'Join Now' },
+    { href: 'https://thecultgym.fliipapp.com/', label: 'Join Now', external: true },
     { href: '#classes', label: 'View Schedule' },
     { href: '#contact', label: 'Visit Us' },
   ]
@@ -59,6 +59,7 @@ export default function BottomNav() {
                 <li key={link.href}>
                   <a 
                     href={link.href}
+                    {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     className="text-gray-400 hover:text-culture-red transition-colors duration-300"
                   >
                     {link.label}

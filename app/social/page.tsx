@@ -527,7 +527,9 @@ export default function SocialPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/#membership"
+                href="https://thecultgym.fliipapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl pulse-glow hover-lift inline-block"
               >
                 BECOME A MEMBER

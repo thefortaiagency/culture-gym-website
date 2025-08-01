@@ -134,7 +134,12 @@ export default function CultureCard() {
                 </div>
 
                 <div className="flex gap-4">
-                  <a href="#membership" className="glass-red px-6 py-3 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift flex-1 text-center">
+                  <a 
+                    href="https://thecultgym.fliipapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="glass-red px-6 py-3 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift flex-1 text-center"
+                  >
                     JOIN NOW
                   </a>
                   <a href="#classes" className="glass-dark px-6 py-3 font-bebas text-xl uppercase tracking-wider rounded-xl hover-lift flex-1 text-center border border-culture-red/30">
