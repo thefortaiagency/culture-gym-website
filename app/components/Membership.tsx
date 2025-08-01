@@ -44,12 +44,11 @@ export default function Membership() {
   ]
 
   const discounts = [
-    'MILITARY & FIRST RESPONDERS',
-    'STUDENTS',
-    'SENIOR CITIZENS',
     'SILVER SNEAKERS',
-    'PRIME & RENEW ACTIVE',
-    'ACTIVE FIT & SILVER FIT',
+    'PRIME',
+    'RENEW ACTIVE',
+    'ONE PASS',
+    '55 OR BETTER',
   ]
 
   return (
@@ -117,15 +116,18 @@ export default function Membership() {
           <h3 className="font-bebas text-3xl text-center text-culture-red mb-6">
             SPECIAL DISCOUNTS AVAILABLE
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {discounts.map((discount, index) => (
-              <div 
+              <a 
                 key={discount}
-                className="text-center p-4 glass rounded-xl hover-lift transition-all duration-300 slide-in"
+                href="https://thecultgym.fliipapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center p-4 glass rounded-xl hover-lift transition-all duration-300 slide-in hover:glass-red cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <span className="text-sm uppercase font-medium">{discount}</span>
-              </div>
+              </a>
             ))}
           </div>
         </div>
