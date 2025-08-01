@@ -108,13 +108,13 @@ export default function CultureCard() {
                     <p className="flex items-start gap-2">
                       <span>📍</span>
                       <span>
-                        <strong>5310 Merchandise Dr</strong><br/>
+                        <strong>5316 Merchandise Dr</strong><br/>
                         Fort Wayne, IN 46808
                       </span>
                     </p>
                     <p className="flex items-center gap-2">
                       <span>📞</span>
-                      <span>(260) 123-4567</span>
+                      <span>(260) 483-1415</span>
                     </p>
                   </div>
                 </div>

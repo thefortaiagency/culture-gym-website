@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="glass-dark rounded-2xl p-8 space-y-8 slide-in hover-lift">
               <div>
                 <h3 className="font-bebas text-3xl text-culture-red mb-4">PRIME FORT WAYNE LOCATION</h3>
-                <p className="text-xl mb-2">📍 5310 Merchandise Dr</p>
+                <p className="text-xl mb-2">📍 5316 Merchandise Dr</p>
                 <p className="text-xl mb-4">Fort Wayne, IN 46808</p>
                 <div className="glass rounded-xl p-4 text-sm space-y-2">
                   <p className="text-gray-300">✅ Historic Spiece Fieldhouse - A Fort Wayne Landmark</p>
@@ -46,7 +46,7 @@ export default function Contact() {
 
               <div>
                 <h3 className="font-bebas text-3xl text-culture-red mb-4">CONTACT</h3>
-                <p className="text-xl mb-2">Phone: (260) 123-4567</p>
+                <p className="text-xl mb-2">Phone: (260) 483-1415</p>
                 <p className="text-xl">Email: info@theculturegym.com</p>
               </div>
 

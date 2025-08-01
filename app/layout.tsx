@@ -56,10 +56,10 @@ export default function RootLayout({
     name: "The Culture Gym",
     description: "Fort Wayne's premier old school gym located at historic Spiece Fieldhouse",
     url: "https://theculturegym.com",
-    telephone: "+1-260-000-0000",
+    telephone: "+1-260-483-1415",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "5310 Merchandise Dr",
+      streetAddress: "5316 Merchandise Dr",
       addressLocality: "Fort Wayne",
       addressRegion: "IN",
       postalCode: "46808",
