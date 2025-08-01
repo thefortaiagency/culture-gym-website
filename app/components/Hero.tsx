@@ -68,9 +68,7 @@ export default function Hero() {
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           <a 
-            href="https://thecultgym.fliipapp.com/" 
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/membership"
             className="glass-red px-8 py-4 font-bebas text-2xl uppercase tracking-wider rounded-xl pulse-glow hover-lift inline-block"
           >
             START YOUR JOURNEY
