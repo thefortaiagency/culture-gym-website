@@ -74,7 +74,7 @@ export default function BottomNav() {
             <h4 className="font-bebas text-xl text-culture-red">CONNECT</h4>
             <div className="space-y-2 text-gray-400">
               <p>5316 Merchandise Dr</p>
-              <p>Fort Wayne, IN 46808</p>
+              <p>Fort Wayne, IN 46825</p>
               <p>(260) 483-1415</p>
             </div>
             <div className="flex gap-4 pt-4">

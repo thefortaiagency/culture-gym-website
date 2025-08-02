@@ -94,7 +94,7 @@ export default function CultureCard() {
                     <div className="text-sm text-gray-400">Hammer Pieces</div>
                   </div>
                   <div className="text-center">
-                    <div className="font-bebas text-3xl text-culture-red">30+</div>
+                    <div className="font-bebas text-3xl text-culture-red">20+</div>
                     <div className="text-sm text-gray-400">Classes</div>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function CultureCard() {
                       <span>📍</span>
                       <span>
                         <strong>5316 Merchandise Dr</strong><br/>
-                        Fort Wayne, IN 46808
+                        Fort Wayne, IN 46825
                       </span>
                     </p>
                     <p className="flex items-center gap-2">

@@ -100,7 +100,7 @@ export default function Contact() {
             {/* Map/Image */}
             <div className="relative h-96 md:h-full min-h-[400px] glass-dark rounded-2xl overflow-hidden slide-in hover-lift">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.6974674012855!2d-85.05669908459456!3d41.12088597928831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8815e48d6a5a5a5a%3A0x5a5a5a5a5a5a5a5a!2s5316%20Merchandise%20Dr%2C%20Fort%20Wayne%2C%20IN%2046808!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.6974674012855!2d-85.05669908459456!3d41.12088597928831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8815e48d6a5a5a5a%3A0x5a5a5a5a5a5a5a5a!2s5316%20Merchandise%20Dr%2C%20Fort%20Wayne%2C%20IN%2046825!5e0!3m2!1sen!2sus!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
