@@ -24,7 +24,7 @@ export default function Contact() {
               <div>
                 <h3 className="font-bebas text-3xl text-culture-red mb-4">PRIME FORT WAYNE LOCATION</h3>
                 <p className="text-xl mb-2">📍 5316 Merchandise Dr</p>
-                <p className="text-xl mb-4">Fort Wayne, IN 46808</p>
+                <p className="text-xl mb-4">Fort Wayne, IN 46825</p>
                 <div className="glass rounded-xl p-4 text-sm space-y-2">
                   <p className="text-gray-300">✅ Historic Spiece Fieldhouse - A Fort Wayne Landmark</p>
                   <p className="text-gray-300">✅ Easy Access from I-69 & US-30</p>

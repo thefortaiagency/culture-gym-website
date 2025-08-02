@@ -11,7 +11,7 @@ export default function Hero() {
   const stats = [
     { number: '500+', label: 'ACTIVE MEMBERS' },
     { number: '15+', label: 'YEARS STRONG' },
-    { number: '30+', label: 'GROUP CLASSES' },
+    { number: '20+', label: 'GROUP CLASSES' },
     { number: '22', label: 'HAMMER STRENGTH' }
   ]
 

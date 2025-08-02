@@ -85,7 +85,7 @@ export default function About() {
               <p>
                 The Culture Gym took over Spiece Fieldhouse on <span className="text-culture-red font-semibold">October 1st, 2023</span>. 
                 Spiece Fieldhouse had been a <span className="text-culture-red font-semibold">staple in Fort Wayne, IN for over 20 years</span>, 
-                offering fitness, swimming, basketball, and volleyball.
+                offering comprehensive fitness services.
               </p>
               
               {!showFullStory ? (
@@ -108,9 +108,9 @@ export default function About() {
                   </p>
                   
                   <p>
-                    Our membership includes access to <span className="text-culture-red font-semibold">close to 30 group fitness classes</span> 
+                    Our membership includes access to <span className="text-culture-red font-semibold">20+ group fitness classes</span> 
                     in our <span className="text-culture-red font-semibold">state-of-the-art group fitness room</span>. 
-                    We're also home to <span className="text-culture-red font-semibold">4 independent personal trainers</span> 
+                    We're also home to <span className="text-culture-red font-semibold">multiple certified personal trainers</span> 
                     who train everybody from young athletes to the elderly.
                   </p>
                   
