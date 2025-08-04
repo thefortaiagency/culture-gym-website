@@ -10,6 +10,7 @@ import {
   type CalendarEvent 
 } from '@/hooks/useGoogleCalendar'
 
+
 export default function Calendar() {
   const [currentView, setCurrentView] = useState<'day' | 'week' | 'month'>('week')
   const [currentDate, setCurrentDate] = useState(new Date())
