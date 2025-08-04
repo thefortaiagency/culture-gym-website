@@ -40,7 +40,7 @@ export default function Classes() {
             <span className="text-stroke">GROUP</span>{' '}
             <span className="text-culture-red">FITNESS</span>
           </h2>
-          <p className="text-xl">30 CLASSES INCLUDED WITH MEMBERSHIP</p>
+          <p className="text-xl">20+ CLASSES INCLUDED WITH MEMBERSHIP</p>
         </div>
 
         {/* Class Types Grid */}
