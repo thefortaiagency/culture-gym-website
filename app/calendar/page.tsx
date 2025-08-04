@@ -173,9 +173,10 @@ export default function Calendar() {
                 )}
                 {error && (
                   <div className="glass-dark rounded-xl p-4 border-l-4 border-yellow-500 mb-4">
-                    <p className="text-yellow-500">Unable to load live calendar. Showing sample schedule.</p>
-                    <button onClick={refetch} className="mt-2 text-sm underline hover:text-culture-red">
-                      Try again
+                    <p className="text-yellow-500">Unable to connect to calendar.</p>
+                    <p className="text-sm text-gray-400 mt-1">Please check back later or contact the gym for the current schedule.</p>
+                    <button onClick={refetch} className="mt-3 glass-red px-4 py-2 rounded-lg text-sm font-bebas tracking-wider hover-lift">
+                      Try Again
                     </button>
                   </div>
                 )}
@@ -237,7 +238,16 @@ export default function Calendar() {
                     <p className="mt-2 text-gray-400">Loading classes...</p>
                   </div>
                 )}
-                {!loading && (
+                {error && (
+                  <div className="glass-dark rounded-xl p-4 border-l-4 border-yellow-500 mb-4">
+                    <p className="text-yellow-500">Unable to connect to calendar.</p>
+                    <p className="text-sm text-gray-400 mt-1">Please check back later or contact the gym for the current schedule.</p>
+                    <button onClick={refetch} className="mt-3 glass-red px-4 py-2 rounded-lg text-sm font-bebas tracking-wider hover-lift">
+                      Try Again
+                    </button>
+                  </div>
+                )}
+                {!loading && !error && (
                   <div className="grid grid-cols-2 md:grid-cols-7 gap-3 overflow-x-auto md:overflow-visible">
                     {getWeekDates().map((date, index) => {
                       const dayEvents = getClassesForDate(date)
@@ -289,6 +299,14 @@ export default function Calendar() {
                   <div className="text-center py-8">
                     <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-culture-red"></div>
                     <p className="mt-2 text-gray-400">Loading classes...</p>
+                  </div>
+                ) : error ? (
+                  <div className="glass-dark rounded-xl p-4 border-l-4 border-yellow-500">
+                    <p className="text-yellow-500">Unable to connect to calendar.</p>
+                    <p className="text-sm text-gray-400 mt-1">Please check back later or contact the gym for the current schedule.</p>
+                    <button onClick={refetch} className="mt-3 glass-red px-4 py-2 rounded-lg text-sm font-bebas tracking-wider hover-lift">
+                      Try Again
+                    </button>
                   </div>
                 ) : (
                   <div className="grid grid-cols-7 gap-1 md:gap-3">

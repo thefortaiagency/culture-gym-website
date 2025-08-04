@@ -51,8 +51,8 @@ export function useGoogleCalendar(options: UseGoogleCalendarOptions = {}) {
       console.error('Error fetching calendar events:', err)
       setError(err instanceof Error ? err.message : 'Failed to load calendar')
       
-      // Fall back to sample data if API fails
-      setEvents(getSampleEvents())
+      // No fallback data - show empty if API fails
+      setEvents([])
     } finally {
       setLoading(false)
     }
@@ -122,52 +122,3 @@ export function formatDuration(event: CalendarEvent): string {
   }
 }
 
-// Get sample events as fallback
-function getSampleEvents(): CalendarEvent[] {
-  const today = new Date()
-  const events: CalendarEvent[] = []
-  
-  // Sample weekly schedule
-  const sampleSchedule = [
-    { day: 1, time: '10:15', title: 'SPINNING', duration: 45, instructor: 'HANNAH', color: 'bg-orange-500' },
-    { day: 1, time: '16:30', title: 'BARRE SCULPT', duration: 45, instructor: 'HANNAH', color: 'bg-pink-500' },
-    { day: 1, time: '17:25', title: 'STRONG NATION', duration: 55, instructor: 'NIKKI', color: 'bg-yellow-500' },
-    { day: 2, time: '06:15', title: 'BARRE SCULPT', duration: 45, instructor: 'KASI', color: 'bg-pink-500' },
-    { day: 2, time: '09:00', title: 'YOGA FLOW', duration: 60, instructor: 'HANNAH', color: 'bg-purple-500' },
-    { day: 3, time: '09:15', title: 'TAI CHI', duration: 60, instructor: 'SUSAN', color: 'bg-green-500' },
-    { day: 3, time: '16:45', title: 'SPIN', duration: 30, instructor: 'LORI', color: 'bg-orange-500' },
-    { day: 3, time: '17:30', title: 'RIP/STRENGTH', duration: 55, instructor: 'HANNAH', color: 'bg-blue-500' },
-    { day: 4, time: '07:15', title: 'RIP/STRENGTH', duration: 55, instructor: 'HANNAH', color: 'bg-blue-500' },
-    { day: 4, time: '09:00', title: 'SPIN', duration: 45, instructor: 'KASI', color: 'bg-orange-500' },
-    { day: 5, time: '10:15', title: 'RIP/STRENGTH', duration: 55, instructor: 'HANNAH', color: 'bg-blue-500' },
-    { day: 5, time: '16:45', title: 'YOGA FLOW', duration: 60, instructor: 'HANNAH', color: 'bg-purple-500' },
-  ]
-  
-  // Generate events for the next 4 weeks
-  for (let week = 0; week < 4; week++) {
-    for (const schedule of sampleSchedule) {
-      const eventDate = new Date(today)
-      eventDate.setDate(today.getDate() - today.getDay() + schedule.day + (week * 7))
-      
-      const [hours, minutes] = schedule.time.split(':').map(Number)
-      eventDate.setHours(hours, minutes, 0, 0)
-      
-      const endDate = new Date(eventDate)
-      endDate.setMinutes(endDate.getMinutes() + schedule.duration)
-      
-      events.push({
-        id: `sample-${week}-${schedule.day}-${schedule.time}`,
-        title: `${schedule.title} (${schedule.duration} MIN)`,
-        description: `Join ${schedule.instructor} for an intense ${schedule.title.toLowerCase()} session`,
-        start: eventDate.toISOString(),
-        end: endDate.toISOString(),
-        location: 'Main Studio',
-        instructor: schedule.instructor,
-        classType: schedule.title,
-        color: schedule.color
-      })
-    }
-  }
-  
-  return events
-}
